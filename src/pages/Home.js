@@ -17,7 +17,7 @@ const cardInfos = [
     title: `Feeds`,
     username: `@Feeds-dev`,
     descr: `Hi!👋 Welcome to Feeds, a decentralized social application where users remain in full
-    control of their own data! Feeds is now available in elastOS, Android and iOS! #ownyourdata ❤️❤️`,
+    control of their own data! Feeds is now available on elastOS, Android and iOS! #ownyourdata ❤️❤️`,
     content: <Banner img={mobileimg} />,
     like: `15`,
     comment: `3`,
