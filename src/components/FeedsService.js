@@ -90,14 +90,15 @@ export default function FeedsService() {
         >
           😺 Github
         </Button>
-
-        <Typography variant="h5" color="secondary" className={classes.title}>
-          For Docker
-        </Typography>
-        <Typography variant="h6" color="secondary">
-          🏃Run the following command in the terminal to install and start the
-          service
-        </Typography>
+        <Grid container direction="column" justify="center" alignItems="center">
+          <Typography variant="h5" color="secondary" className={classes.title}>
+            For Docker
+          </Typography>
+          <Typography variant="subtitle" color="secondary">
+            🏃Run the following command in the terminal to install and start the
+            service
+          </Typography>
+        </Grid>
 
         <Button
           variant="outlined"

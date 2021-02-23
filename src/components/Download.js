@@ -23,9 +23,12 @@ export default function Download() {
   return (
     <div>
       <Grid container direction="column" justify="center">
-        <Typography variant="h5" color="secondary" className={classes.title}>
-          Download Feeds Capsule/Native App
-        </Typography>
+        <Grid container direction="column" justify="center" alignItems="center">
+          <Typography variant="h5" color="secondary" className={classes.title}>
+            Download Feeds Capsule/Native App
+          </Typography>
+        </Grid>
+
         <Button
           variant="contained"
           color="secondary"

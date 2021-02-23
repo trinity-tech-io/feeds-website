@@ -33,7 +33,7 @@ const cardInfos = [
      Here's where Feeds come into place. You're the sole owner of your data🔒 and only 👉YOU👈can control them however you want.
      Feeds cannot be censored❌🚫 and there's no single
      point of failure because of its decentralized nature.🥳🎉`,
-    content: <Features />,
+    content: <Features img={mobileimg} />,
     like: `599`,
     comment: `15`,
   },

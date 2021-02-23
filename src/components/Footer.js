@@ -13,6 +13,7 @@ import TelegramIcon from "@material-ui/icons/Telegram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { usePlainNavigationMenuStyles } from "@mui-treasury/styles/navigationMenu/plain";
 import logo from "../assets/feeds-logo.svg";
+import Copyright from "./Copyright";
 
 const useStyles = makeStyles(({ typography, palette, breakpoints }) => ({
   legalLink: {
@@ -89,7 +90,7 @@ export const Footer = React.memo(function NeptuneAppFooter() {
                 <IconButton
                   aria-label="Twitter"
                   href={"https://twitter.com/elastOSFeeds"}
-                  color="secondary"
+                  color="primary"
                   className={classes.onHover}
                 >
                   <TwitterIcon />
@@ -97,7 +98,7 @@ export const Footer = React.memo(function NeptuneAppFooter() {
                 <IconButton
                   aria-label="Telegram"
                   href={"https://web.telegram.org/#/im?p=@feedscapsule"}
-                  color="secondary"
+                  color="primary"
                   className={classes.onHover}
                 >
                   <TelegramIcon />
@@ -146,6 +147,7 @@ export const Footer = React.memo(function NeptuneAppFooter() {
               </Box>
             </Item>
           </ColumnToRow>
+          <Copyright />
         </Box>
       </Container>
     </Box>

@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     // textTransform: `uppercase`,
     color: `white`,
     "&:hover": {
-      backgroundColor: "#307ae0",
+      backgroundColor: "#7624FE",
       color: "#fff",
     },
   },
@@ -54,7 +54,7 @@ const navLinks = [
   { title: `Manual`, path: `#manual` },
 ];
 
-const Navbar = () => {
+function Navbar({ switchtheme }) {
   const classes = useStyles();
 
   return (
@@ -66,8 +66,8 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 activeStyle={{
-                  background: "#307ae0",
-                  color: "#307ae0",
+                  background: "#7624FE",
+                  color: "#7624FE",
                 }}
               >
                 <img src={logo} className={classes.logo}></img>
@@ -95,7 +95,11 @@ const Navbar = () => {
                     </a>
                   ))}
                 </List>
+                <List className={classes.navListDisplayFlex}>
+                  <div>{switchtheme}</div>
+                </List>
               </Hidden>
+
               <Hidden mdUp>
                 <SideDrawer navLinks={navLinks} />
               </Hidden>
@@ -106,12 +110,12 @@ const Navbar = () => {
       <Toolbar id="back-to-top-anchor" />
 
       <BackToTop>
-        <Fab color="secondary" size="large" aria-label="scroll back to top">
+        <Fab color="primary" size="large" aria-label="scroll back to top">
           <KeyboardArrowUp />
         </Fab>
       </BackToTop>
     </>
   );
-};
+}
 
 export default Navbar;

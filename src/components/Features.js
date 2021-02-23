@@ -17,38 +17,36 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Features() {
+export default function Features({ img }) {
   const classes = useStyles();
 
   return (
     <div>
       <Grid container direction="column" justify="center">
-        <Typography variant="h5" color="secondary" className={classes.title}>
-          About Feeds
-        </Typography>
-        <Button
-          variant="outlined"
-          color="secondary"
-          className={classes.button}
-          href="https://github.com/elastos-trinity/feeds-manual-docs/blob/master/Feeds_Manual_en.md"
-        >
-          🔱 Data Ownership ✅
+        <Grid container direction="column" justify="center" alignItems="center">
+          <Typography variant="h5" color="secondary" className={classes.title}>
+            About Feeds
+          </Typography>
+        </Grid>
+
+        <Button variant="outlined" color="secondary" className={classes.button}>
+          ✅ Data Ownership 🔱
         </Button>
-        <Button
-          variant="outlined"
-          color="secondary"
-          className={classes.button}
-          href="https://github.com/elastos-trinity/feeds-manual-docs/blob/master/Feeds_Manual_zh.md"
-        >
-          ⛔ Private ✅
+        <Button variant="outlined" color="secondary" className={classes.button}>
+          ✅ Private ⛔
         </Button>
-        <Button
-          variant="outlined"
-          color="secondary"
-          className={classes.button}
-          href="https://github.com/elastos-trinity/feeds-manual-docs/blob/master/Feeds_Manual_zh.md"
-        >
-          🤝 Content-Sharing ✅
+        <Button variant="outlined" color="secondary" className={classes.button}>
+          ✅ Content-Sharing 🤝
+        </Button>
+        <Grid container direction="column" justify="center" alignItems="center">
+          {/* <img
+            src={img}
+            alt="Available on elastOs, Android and iOS!"
+            className={classes.media}
+          /> */}
+        </Grid>
+        <Button variant="outlined" color="secondary" className={classes.button}>
+          ✅ Decentralized 🧱⛓️
         </Button>
       </Grid>
     </div>

@@ -19,21 +19,13 @@ const useStyles = makeStyles((theme) => ({
     width: 600,
     marginTop: 10,
     padding: 15,
+    // borderStyle: "solid",
+    borderColor: "#f2f2f2",
   },
   media: {
     width: "50%",
     height: "auto",
     paddingTop: "56.25%", // 16:9
-  },
-  expand: {
-    transform: "rotate(0deg)",
-    marginLeft: "auto",
-    transition: theme.transitions.create("transform", {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: "rotate(180deg)",
   },
   avatar: {
     backgroundColor: "#A067FF",
