@@ -16,8 +16,9 @@ import { Grid } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     minWidth: 300,
-    width: 1200,
+    width: 600,
     marginTop: 10,
+    padding: 15,
   },
   media: {
     width: "50%",

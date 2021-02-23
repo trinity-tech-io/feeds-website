@@ -13,6 +13,7 @@ import {
 import { KeyboardArrowUp } from "@material-ui/icons";
 import * as React from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import HideOnScroll from "./HideOnScroll";
 import SideDrawer from "./SideDrawer";
 import BackToTop from "./BackToTop";
@@ -43,14 +44,14 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     height: 60,
     width: "auto",
-    backgroundColor: "#307ae0",
   },
 }));
 
 const navLinks = [
-  { title: `Feeds Service`, path: `/#feeds-service` },
-  { title: `Download`, path: `/#download` },
-  { title: `Manual`, path: `/#manual` },
+  { title: `Features`, path: `#features` },
+  { title: `Feeds Service`, path: `#feeds-service` },
+  { title: `Download`, path: `#download` },
+  { title: `Manual`, path: `#manual` },
 ];
 
 const Navbar = () => {
@@ -79,9 +80,17 @@ const Navbar = () => {
                   className={classes.navListDisplayFlex}
                 >
                   {navLinks.map(({ title, path }) => (
-                    <a href={path} key={title} className={classes.linkText}>
+                    <a key={title} className={classes.linkText}>
                       <ListItem button>
-                        <ListItemText primary={title} />
+                        <Link
+                          className={classes.linkText}
+                          activeClass="active"
+                          to={path.substring(1)} //remove the # for Link tag to work
+                          spy={true}
+                          smooth={true}
+                        >
+                          {title}
+                        </Link>
                       </ListItem>
                     </a>
                   ))}

@@ -31,10 +31,17 @@ export default function FeedsService() {
     "docker run -d --restart=always -p 10080:10080 trinitytech/feeds"
   );
 
-  const [open, setOpen] = React.useState(false);
+  //snackbar
+  const [state, setState] = React.useState({
+    open: false,
+    vertical: "center",
+    horizontal: "center",
+  });
 
-  const handleClick = () => {
-    setOpen(true);
+  const { vertical, horizontal, open } = state;
+
+  const handleClick = (newState) => () => {
+    setState({ open: true, ...newState });
     setCopied(true);
   };
 
@@ -42,15 +49,14 @@ export default function FeedsService() {
     if (reason === "clickaway") {
       return;
     }
-
-    setOpen(false);
+    setState({ ...state, open: false });
   };
 
   return (
     <div>
       <Grid container direction="column" justify="center">
         <Typography variant="h5" color="primary" className={classes.title}>
-          Debian Packages for Linux System
+          For Debian Packages Based On Linux System
         </Typography>
         <Button
           variant="contained"
@@ -86,28 +92,33 @@ export default function FeedsService() {
         </Button>
 
         <Typography variant="h5" color="secondary" className={classes.title}>
-          Docker
+          For Docker
         </Typography>
         <Typography variant="h6" color="secondary">
-          🏃 Run the following command in the terminal to install and start the
+          🏃Run the following command in the terminal to install and start the
           service
         </Typography>
 
         <Button
           variant="outlined"
           color="secondary"
-          onClick={handleClick}
+          onClick={handleClick({ vertical: "center", horizontal: "center" })}
           className={classes.button}
         >
           docker run -d --restart=always -p 10080:10080 trinitytech/feeds
         </Button>
-
-        <Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
-          <MuiAlert onClose={handleClose} severity="success">
-            {isCopied ? "Copied to Clipboard! 👍" : "Nope! 👎"}
-          </MuiAlert>
-        </Snackbar>
       </Grid>
+      <Snackbar
+        open={open}
+        autoHideDuration={1000}
+        onClose={handleClose}
+        anchorOrigin={{ vertical, horizontal }}
+        key={vertical + horizontal}
+      >
+        <MuiAlert onClose={handleClose} severity="success">
+          {isCopied ? "Copied to Clipboard! 👍" : "Nope! 👎"}
+        </MuiAlert>
+      </Snackbar>
     </div>
   );
 }

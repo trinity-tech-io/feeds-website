@@ -1,11 +1,13 @@
 import React from "react";
 import Banner from "../components/Banner";
+import Features from "../components/Features";
 import FeedsService from "../components/FeedsService";
 import Download from "../components/Download";
 import Manual from "../components/Manual";
 import FeedsCard from "../components/FeedsCard";
 import mobileimg from "../assets/feeds-onboarding.svg";
 import CodeIcon from "@material-ui/icons/Code";
+import FlashOnIcon from "@material-ui/icons/FlashOn";
 import ComputerIcon from "@material-ui/icons/Computer";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
@@ -21,6 +23,19 @@ const cardInfos = [
     content: <Banner img={mobileimg} />,
     like: `15`,
     comment: `3`,
+  },
+  {
+    id: "features",
+    avatarimg: <FlashOnIcon />,
+    title: `Features`,
+    username: `@Feeds-features`,
+    descr: `So, why Feeds?🤔 Well, with all the ongoing privacy and data breach, there's gotta be a way to safeguard our data right?  
+     Here's where Feeds come into place. You're the sole owner of your data🔒 and only 👉YOU👈can control them however you want.
+     Feeds cannot be censored❌🚫 and there's no single
+     point of failure because of its decentralized nature.🥳🎉`,
+    content: <Features />,
+    like: `599`,
+    comment: `15`,
   },
   {
     id: "feeds-service",
@@ -49,7 +64,7 @@ const cardInfos = [
     avatarimg: <MenuBookIcon />,
     title: `Manual`,
     username: `@Feeds-manual`,
-    descr: `If you have any problem, feel free to browse the manual from the link below or you can join our Telegram channel and ask us there!🔥`,
+    descr: `If you have any problem😕, feel free to browse the manual🔧 from the link below or you can join our Telegram channel and ask us there!🔥`,
     content: <Manual />,
     like: `85`,
     comment: `22`,
