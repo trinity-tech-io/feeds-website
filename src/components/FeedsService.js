@@ -55,12 +55,12 @@ export default function FeedsService() {
   return (
     <div>
       <Grid container direction="column" justify="center">
-        <Typography variant="h5" color="primary" className={classes.title}>
+        <Typography variant="h5" color="secondary" className={classes.title}>
           For Debian Packages Based On Linux System
         </Typography>
         <Button
           variant="contained"
-          color="primary"
+          color="secondary"
           className={classes.button}
           href="https://github.com/elastos-trinity/feeds-service/releases/download/release-v1.5.0/feedsd_1.5.0_amd64_ubuntu_2004.deb"
         >
@@ -68,7 +68,7 @@ export default function FeedsService() {
         </Button>
         <Button
           variant="contained"
-          color="primary"
+          color="secondary"
           className={classes.button}
           href="https://github.com/elastos-trinity/feeds-service/releases/download/release-v1.5.0/feedsd_1.5.0_armhf_raspbian.deb"
         >
@@ -76,7 +76,7 @@ export default function FeedsService() {
         </Button>
         <Button
           variant="contained"
-          color="primary"
+          color="secondary"
           className={classes.button}
           href="https://github.com/elastos-trinity/feeds-service/releases/download/release-v1.5.0/Feeds.Service.app.macos.zip.zip"
         >
@@ -84,7 +84,7 @@ export default function FeedsService() {
         </Button>
         <Button
           variant="contained"
-          color="primary"
+          color="secondary"
           className={classes.button}
           href="https://github.com/elastos-trinity/feeds-service/releases"
         >

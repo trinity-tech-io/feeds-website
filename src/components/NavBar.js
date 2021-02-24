@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   logo: {
-    height: 60,
+    height: 45,
     width: "auto",
   },
 }));

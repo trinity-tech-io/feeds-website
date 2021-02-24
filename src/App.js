@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     paddingTop: theme.spacing(5),
   },
+  toggle: {
+    outline: "none",
+  },
 }));
 
 function App() {
@@ -58,6 +61,7 @@ function App() {
       checked={darkMode}
       size={75}
       speed={5}
+      className={classes.toggle}
     />
   );
 

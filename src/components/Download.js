@@ -24,14 +24,14 @@ export default function Download() {
     <div>
       <Grid container direction="column" justify="center">
         <Grid container direction="column" justify="center" alignItems="center">
-          <Typography variant="h5" color="secondary" className={classes.title}>
+          <Typography variant="h5" color="primary" className={classes.title}>
             Download Feeds Capsule/Native App
           </Typography>
         </Grid>
 
         <Button
           variant="contained"
-          color="secondary"
+          color="primary"
           className={classes.button}
           href="https://scheme.elastos.org/app?id=io.trinity-tech.dapp.feeds"
         >
@@ -39,7 +39,7 @@ export default function Download() {
         </Button>
         <Button
           variant="contained"
-          color="secondary"
+          color="primary"
           className={classes.button}
           href="https://play.google.com/store/apps/details?id=io.trinitytech.dapp.feeds"
         >
@@ -47,7 +47,7 @@ export default function Download() {
         </Button>
         <Button
           variant="contained"
-          color="secondary"
+          color="primary"
           className={classes.button}
           href="https://apps.apple.com/us/app/trinity-feeds/id1546436333"
         >

@@ -23,12 +23,12 @@ export default function Manual() {
   return (
     <div>
       <Grid container direction="column" justify="center">
-        <Typography variant="h5" color="primary" className={classes.title}>
+        <Typography variant="h5" color="secondary" className={classes.title}>
           Installation Guide/Manual
         </Typography>
         <Button
           variant="outlined"
-          color="primary"
+          color="secondary"
           className={classes.button}
           href="https://github.com/elastos-trinity/feeds-manual-docs/blob/master/Feeds_Manual_en.md"
         >
@@ -36,7 +36,7 @@ export default function Manual() {
         </Button>
         <Button
           variant="outlined"
-          color="primary"
+          color="secondary"
           className={classes.button}
           href="https://github.com/elastos-trinity/feeds-manual-docs/blob/master/Feeds_Manual_zh.md"
         >
@@ -44,7 +44,7 @@ export default function Manual() {
         </Button>
         <Button
           variant="outlined"
-          color="primary"
+          color="secondary"
           className={classes.button}
           href="https://github.com/elastos-trinity/feeds-manual-docs/blob/master/Feeds_Manual_zh.md"
         >

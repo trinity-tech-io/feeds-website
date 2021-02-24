@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
     height: "auto",
     paddingTop: "56.25%", // 16:9
   },
+  title: {
+    fontWeight: "bold",
+  },
   avatar: {
     backgroundColor: "#A067FF",
     width: theme.spacing(7),
@@ -68,13 +71,15 @@ export default function FeedsCard({
                 <MoreHorizIcon />
               </IconButton>
             }
-            title={title}
+            title={
+              <Typography variant="h6" className={classes.title}>
+                {title}
+              </Typography>
+            }
             subheader={username}
           />
           <CardContent>
-            <Typography variant="h5" component="p">
-              {descr}
-            </Typography>
+            <Typography variant="h5">{descr}</Typography>
           </CardContent>
           <Grid container direction="row" justify="center">
             <Content feedsContent={content} />
