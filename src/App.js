@@ -12,6 +12,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Switch from "@material-ui/core/Switch";
+import DarkModeToggle from "react-dark-mode-toggle";
 // Animate on scroll initialization
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -38,7 +39,7 @@ function App() {
   const theme = createMuiTheme({
     palette: {
       primary: {
-        main: "#7624FE",
+        main: "#7B2CFE",
       },
       secondary: {
         main: "#368BFF",
@@ -51,7 +52,13 @@ function App() {
   });
 
   const switchTheme = (
-    <Switch checked={darkMode} onChange={handleThemeChange} color={"grey"} />
+    // <Switch checked={darkMode} onChange={handleThemeChange} color={"grey"} />
+    <DarkModeToggle
+      onChange={handleThemeChange}
+      checked={darkMode}
+      size={75}
+      speed={5}
+    />
   );
 
   return (

@@ -33,11 +33,12 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: `space-between`,
   },
   linkText: {
+    fontFamily: ['"Montserrat"', "Open Sans"].join(","),
     textDecoration: `none`,
     // textTransform: `uppercase`,
     color: `white`,
     "&:hover": {
-      backgroundColor: "#7624FE",
+      backgroundColor: "primary",
       color: "#fff",
     },
   },
@@ -66,8 +67,8 @@ function Navbar({ switchtheme }) {
               <NavLink
                 to="/"
                 activeStyle={{
-                  background: "#7624FE",
-                  color: "#7624FE",
+                  background: "primary",
+                  color: "primary",
                 }}
               >
                 <img src={logo} className={classes.logo}></img>
@@ -96,7 +97,7 @@ function Navbar({ switchtheme }) {
                   ))}
                 </List>
                 <List className={classes.navListDisplayFlex}>
-                  <div>{switchtheme}</div>
+                  {switchtheme}
                 </List>
               </Hidden>
 
