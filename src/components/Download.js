@@ -61,9 +61,9 @@ export default function Download() {
               If you're already using elastOS/elastOS essentials, you can sign
               in🔑 with your existing DID. A temporary DID will be issued by
               Feeds during onboarding for users without DIDs🛑. You can either
-              export🚢 that DID later to publish it onto the blockchain or you
-              can create one now🦸! Just click the button below and follow the
-              procedures from the site🌊
+              export🚢 that DID and publish it to the blockchain later or you
+              can create one yourself now🦸! Just click the button below and
+              follow the procedures from the site🌊
             </Typography>
           </CardContent>
         </Grid>

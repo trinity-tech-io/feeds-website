@@ -6,12 +6,17 @@ import Download from "../components/Download";
 import Manual from "../components/Manual";
 import FeedsCard from "../components/FeedsCard";
 import mobileimg from "../assets/feeds-onboarding.svg";
+import ownership from "../assets/feeds-ownership.svg";
+import privacy from "../assets/feeds-private.svg";
+import social from "../assets/feeds-social.svg";
+import decentralized from "../assets/feeds-decentralized.svg";
 import CodeIcon from "@material-ui/icons/Code";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
 import ComputerIcon from "@material-ui/icons/Computer";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
-import GetAppIcon from "@material-ui/icons/GetApp";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
+
+const carouselimages = [ownership, privacy, social, decentralized];
 
 const cardInfos = [
   {
@@ -32,9 +37,8 @@ const cardInfos = [
     username: `@Feeds-features`,
     descr: `So, why Feeds?🤔 Well, with all the ongoing privacy and data breach, there's gotta be a way to safeguard our data right?  
      Here's where Feeds come into place. You're the sole owner of your data🔒 and only 👉YOU👈can control them however you want.
-     Feeds cannot be censored❌🚫 and there's no single
-     point of failure because of its decentralized nature.`,
-    content: <Features img={mobileimg} />,
+     Feeds also cannot be censored❌🚫 by any authorities`,
+    content: <Features carouselimg={carouselimages} />,
     like: `599`,
     comment: `15`,
   },
@@ -44,7 +48,7 @@ const cardInfos = [
     title: `Feeds Service Node`,
     username: `@Feeds-service`,
     descr: `Wait a minute!🙈🙉🙊 Before you can start using Feeds on your mobile phone📱, you need Feeds Service in order to run a node for storing your data.
-      Download the installer💻, run it and open ➡️localhost:10080 in your local browser to receive your Publisher Account QR code.`,
+      Download the installer💻, run it and open ➡️localhost:10080 in the local browser to receive your Publisher Account QR code.`,
     content: <FeedsService />,
     like: `116`,
     comment: `6`,
