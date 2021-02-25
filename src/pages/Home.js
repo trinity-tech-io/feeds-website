@@ -37,7 +37,7 @@ const cardInfos = [
     username: `@Feeds-features`,
     descr: `So, why Feeds?🤔 Well, with all the ongoing privacy and data breach, there's gotta be a way to safeguard our data right?  
      Here's where Feeds come into place. You're the sole owner of your data🔒 and only 👉YOU👈can control them however you want.
-     Feeds also cannot be censored❌🚫 by any authorities`,
+     Feeds also cannot be censored❌🚫 by any authority`,
     content: <Features carouselimg={carouselimages} />,
     like: `599`,
     comment: `15`,
