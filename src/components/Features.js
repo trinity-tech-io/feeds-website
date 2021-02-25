@@ -96,7 +96,7 @@ export default function Features({ carouselimg }) {
                 color="secondary"
                 className={classes.title}
               >
-                Your private data is secure!
+                Your data is private and secure!
               </Typography>
             </Grid>
           </Slide>
