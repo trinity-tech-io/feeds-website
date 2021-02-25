@@ -42,8 +42,8 @@
      id="namedview687"
      showgrid="false"
      inkscape:zoom="0.31707753"
-     inkscape:cx="1340.796"
-     inkscape:cy="1193.803"
+     inkscape:cx="1444.3998"
+     inkscape:cy="1284.0962"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -147,7 +147,7 @@
        x2="457.07001"
        y2="364.48001"
        xlink:href="#74471b12-b6be-488b-b2aa-2815e91483d9"
-       gradientTransform="matrix(3.401892,0,0,4.3528514,-17.182268,372.01689)" />
+       gradientTransform="matrix(3.401892,0,0,4.0848812,-17.182268,469.6867)" />
     <linearGradient
        id="a1850e5a-cf77-4889-926a-0125112ab273"
        x1="611.22998"
@@ -164,16 +164,6 @@
        y2="602.73999"
        xlink:href="#74471b12-b6be-488b-b2aa-2815e91483d9"
        gradientTransform="matrix(3.401892,0,0,4.47653,-534.81417,-529.24261)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#74471b12-b6be-488b-b2aa-2815e91483d9"
-       id="linearGradient707"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0,3.4298604,-4.4551384,-1.5392649e-8,942.94957,-401.77601)"
-       x1="790.94"
-       y1="640.76001"
-       x2="790.94"
-       y2="264.76001" />
   </defs>
   <title
      id="title578">safe</title>
@@ -186,21 +176,21 @@
      id="rect580"
      style="fill:#f5f5f5;stroke-width:3.90902805" />
   <rect
-     x="-1911.7257"
-     y="1470.2076"
-     width="1675.132"
-     height="1681.6261"
-     transform="matrix(0.11471056,-0.99339896,0.98059009,0.19606906,0,0)"
-     id="rect582"
-     style="fill:url(#linearGradient707);stroke-width:3.90902805" />
+     x="-93.399864"
+     y="855.20093"
+     width="1733.2075"
+     height="86.676247"
+     transform="matrix(0.95936043,-0.28218357,0.16746769,0.98587756,0,0)"
+     id="rect610"
+     style="fill:#f5f5f5;stroke-width:3.91598868" />
   <rect
-     x="-1882.1823"
-     y="1501.4368"
+     x="-1793.6254"
+     y="1501.4795"
      width="1527.5332"
      height="1613.4404"
      transform="matrix(0.11471056,-0.99339896,0.98059009,0.19606906,0,0)"
      id="rect584"
-     style="fill:#f5f5f5;stroke-width:3.90902805" />
+     style="fill:#000000;stroke-width:3.90902805;fill-opacity:0.06666667" />
   <ellipse
      cx="-310.36972"
      cy="1540.873"
@@ -298,29 +288,13 @@
      id="rect608"
      style="opacity:0.4;fill:#a067ff;stroke-width:3.90902805" />
   <rect
-     x="-93.399864"
-     y="855.20093"
-     width="1733.2075"
-     height="86.676247"
-     transform="matrix(0.95936043,-0.28218357,0.16746769,0.98587756,0,0)"
-     id="rect610"
-     style="fill:#f5f5f5;stroke-width:3.91598868" />
-  <rect
-     x="-126.97682"
-     y="826.30139"
-     width="1806.4337"
-     height="1639.5818"
-     transform="matrix(0.95936043,-0.28218357,0.16746769,0.98587756,0,0)"
-     id="rect612"
-     style="fill:url(#b92f3a53-b4d2-4abd-916c-aeb632188996);stroke-width:3.91598868" />
-  <rect
      x="-93.41954"
      y="941.92139"
      width="1733.2075"
      height="1495.1208"
      transform="matrix(0.95936043,-0.28218357,0.16746769,0.98587756,0,0)"
      id="rect614"
-     style="fill:#f5f5f5;stroke-width:3.91598868" />
+     style="fill:#000000;stroke-width:3.91598868;fill-opacity:0.06666667" />
   <ellipse
      cx="-51.086861"
      cy="898.53027"
@@ -419,25 +393,11 @@
      style="opacity:0.4;fill:#a067ff;stroke-width:3.91598868" />
   <rect
      x="595.13849"
-     y="423.46835"
-     width="1932.2748"
-     height="107.43673"
-     id="rect640"
-     style="fill:#f5f5f5;stroke-width:3.90239334" />
-  <rect
-     x="557.71765"
-     y="387.6568"
-     width="2013.9203"
-     height="2032.3447"
-     id="rect642"
-     style="fill:url(#59939605-05af-4a9a-9980-f700897f3f8b);stroke-width:3.90239334" />
-  <rect
-     x="595.13849"
      y="530.90546"
      width="1932.2748"
      height="1853.2834"
      id="rect644"
-     style="fill:#ffffff;stroke-width:3.90239334" />
+     style="fill:#f5f5f5;stroke-width:3.90239334;fill-opacity:1" />
   <ellipse
      cx="642.32288"
      cy="477.18686"
@@ -526,9 +486,9 @@
      x="1221.3448"
      y="1958.5449"
      width="632.75195"
-     height="665.98627"
+     height="624.98682"
      id="rect670"
-     style="fill:url(#e5b0a96a-81f6-4370-afe3-5a7d6a35b55e);stroke-width:3.84810758" />
+     style="fill:url(#e5b0a96a-81f6-4370-afe3-5a7d6a35b55e);stroke-width:3.72777772" />
   <path
      d="m 1367.3539,1849.6305 a 177.18758,233.16009 0 0 1 354.3751,0 v 149.2025 h 49.5997 v -149.2025 a 226.80416,298.45025 0 1 0 -453.5743,0 v 149.2025 h 49.5995 z"
      id="path672"
@@ -543,23 +503,23 @@
      x="1248.5598"
      y="1980.926"
      width="591.92926"
-     height="623.05206"
+     height="578.8988"
      id="rect676"
-     style="fill:#a067ff;stroke-width:3.86347651" />
+     style="fill:#a067ff;stroke-width:3.72406673" />
   <rect
      x="1248.5598"
      y="1980.926"
      width="591.92926"
-     height="569.43744"
+     height="525.28418"
      id="rect678"
-     style="fill:#ffffff;stroke-width:3.69350863" />
+     style="fill:#ffffff;stroke-width:3.54742551" />
   <rect
      x="1248.5598"
      y="2106.2693"
      width="591.92926"
-     height="384.9816"
+     height="347.13596"
      id="rect680"
-     style="fill:#368bff;fill-opacity:1;stroke-width:3.90239334" />
+     style="fill:#368bff;fill-opacity:1;stroke-width:3.70561981" />
   <path
      d="m 1587.9665,2226.0617 a 43.408149,57.120518 0 1 0 -74.8415,39.1251 v 121.8508 a 31.569699,41.542382 0 0 0 63.1393,0 v -121.8508 a 43.204034,56.851932 0 0 0 11.7022,-39.1251 z"
      id="path682"
@@ -572,7 +532,7 @@
      style="opacity:0.2;stroke-width:3.90239334" />
   <g
      id="g113-8"
-     transform="matrix(2.9989664,0.00292015,-0.09158118,3.4245031,1140.6564,711.27371)">
+     transform="matrix(2.4607358,0.0024587,-0.07514492,2.8833506,1226.4352,648.26252)">
     <path
        style="opacity:0;fill:#e5e5e5"
        transform="translate(2.027)"
@@ -607,4 +567,11 @@
          inkscape:connector-curvature="0" />
     </g>
   </g>
+  <rect
+     x="595.13849"
+     y="423.46835"
+     width="1932.2748"
+     height="107.43673"
+     id="rect640"
+     style="fill:#000000;stroke-width:3.90239334;fill-opacity:0.06666667" />
 </svg>
