@@ -46,7 +46,7 @@ export default function Manual() {
           variant="outlined"
           color="secondary"
           className={classes.button}
-          href="https://github.com/elastos-trinity/feeds-manual-docs/blob/master/Feeds_Manual_zh.md"
+          href="https://web.telegram.org/#/im?p=@feedscapsule"
         >
           ✈️ Telegram Channel
         </Button>

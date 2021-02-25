@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Switch from "@material-ui/core/Switch";
+//import Switch from "@material-ui/core/Switch";
 import DarkModeToggle from "react-dark-mode-toggle";
 // Animate on scroll initialization
 import AOS from "aos";

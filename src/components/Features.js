@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { Grid } from "@material-ui/core";
+import CardContent from "@material-ui/core/CardContent";
 
 const useStyles = makeStyles((theme) => ({
   media: {
@@ -24,6 +25,11 @@ export default function Features({ img }) {
     <div>
       <Grid container direction="column" justify="center">
         <Grid container direction="column" justify="center" alignItems="center">
+          <CardContent>
+            <Typography variant="h5" color="black" className={classes.font}>
+              TL;DR➡Decentralized Twitter🥳🎉
+            </Typography>
+          </CardContent>
           <Typography variant="h5" color="secondary" className={classes.title}>
             About Feeds
           </Typography>

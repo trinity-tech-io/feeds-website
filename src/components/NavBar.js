@@ -50,8 +50,8 @@ const useStyles = makeStyles((theme) => ({
 
 const navLinks = [
   { title: `Features`, path: `#features` },
-  { title: `Feeds Service`, path: `#feeds-service` },
-  { title: `Download`, path: `#download` },
+  { title: `Node`, path: `#feeds-service` },
+  { title: `App`, path: `#app` },
   { title: `Manual`, path: `#manual` },
 ];
 

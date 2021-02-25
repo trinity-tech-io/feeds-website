@@ -9,6 +9,7 @@ import mobileimg from "../assets/feeds-onboarding.svg";
 import CodeIcon from "@material-ui/icons/Code";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
 import ComputerIcon from "@material-ui/icons/Computer";
+import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 
@@ -32,7 +33,7 @@ const cardInfos = [
     descr: `So, why Feeds?🤔 Well, with all the ongoing privacy and data breach, there's gotta be a way to safeguard our data right?  
      Here's where Feeds come into place. You're the sole owner of your data🔒 and only 👉YOU👈can control them however you want.
      Feeds cannot be censored❌🚫 and there's no single
-     point of failure because of its decentralized nature.🥳🎉`,
+     point of failure because of its decentralized nature.`,
     content: <Features img={mobileimg} />,
     like: `599`,
     comment: `15`,
@@ -40,7 +41,7 @@ const cardInfos = [
   {
     id: "feeds-service",
     avatarimg: <ComputerIcon />,
-    title: `Feeds Service`,
+    title: `Feeds Service Node`,
     username: `@Feeds-service`,
     descr: `Wait a minute!🙈🙉🙊 Before you can start using Feeds on your mobile phone📱, you need Feeds Service in order to run a node for storing your data.
       Download the installer💻, run it and open ➡️localhost:10080 in your local browser to receive your Publisher Account QR code.`,
@@ -49,12 +50,12 @@ const cardInfos = [
     comment: `6`,
   },
   {
-    id: "download",
-    avatarimg: <GetAppIcon />,
-    title: `Download`,
+    id: "app",
+    avatarimg: <PhoneAndroidIcon />,
+    title: `Mobile App`,
     username: `@Feeds-capsule`,
-    descr: `Phew💦 Okay, the next step is the easiest part😎! Go ahead and download📲 the Feeds app and 
-    bind your Publisher Account with the QR code.🗨️ That's it! You're good to go. Just follow the instructions from the app to get started!🚀🌕`,
+    descr: `Phew💦 Okay, the next step is the easiest part😎! Go ahead and download📲 the Feeds mobile app, sign in with your DID🆔 and 
+    bind the Publisher Account QR code from Feeds Service.🗨️ That's it! You're good to go. Just follow the instructions from the app to get started!🚀🌕`,
     content: <Download />,
     like: `555`,
     comment: `2`,
@@ -73,20 +74,22 @@ const cardInfos = [
 
 export default function Home() {
   return (
-    <div data-aos="fade-right" data-aos-duration="1000">
-      {cardInfos.map((cardInfo, index) => (
-        <FeedsCard
-          key={index}
-          id={cardInfo.id}
-          avatarimg={cardInfo.avatarimg}
-          title={cardInfo.title}
-          username={cardInfo.username}
-          descr={cardInfo.descr}
-          content={cardInfo.content}
-          like={cardInfo.like}
-          comment={cardInfo.comment}
-        />
-      ))}
+    <div>
+      <div data-aos="fade-right" data-aos-duration="1000">
+        {cardInfos.map((cardInfo, index) => (
+          <FeedsCard
+            key={index}
+            id={cardInfo.id}
+            avatarimg={cardInfo.avatarimg}
+            title={cardInfo.title}
+            username={cardInfo.username}
+            descr={cardInfo.descr}
+            content={cardInfo.content}
+            like={cardInfo.like}
+            comment={cardInfo.comment}
+          />
+        ))}
+      </div>
     </div>
   );
 }

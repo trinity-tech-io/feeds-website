@@ -22,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     margin: theme.spacing(2),
   },
+  font: {
+    fontFamily: ['"Montserrat"', "Open Sans"].join(","),
+  },
 }));
 
 export default function FeedsService() {
@@ -55,9 +58,11 @@ export default function FeedsService() {
   return (
     <div>
       <Grid container direction="column" justify="center">
-        <Typography variant="h5" color="secondary" className={classes.title}>
-          For Debian Packages Based On Linux System
-        </Typography>
+        <Grid container direction="column" justify="center" alignItems="center">
+          <Typography variant="h5" color="secondary" className={classes.title}>
+            Choose Your Platform
+          </Typography>
+        </Grid>
         <Button
           variant="contained"
           color="secondary"
@@ -86,6 +91,14 @@ export default function FeedsService() {
           variant="contained"
           color="secondary"
           className={classes.button}
+          // href="#"
+        >
+          🖥️ Windows (Coming Soon)
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          className={classes.button}
           href="https://github.com/elastos-trinity/feeds-service/releases"
         >
           😺 Github
@@ -94,12 +107,12 @@ export default function FeedsService() {
           <Typography variant="h5" color="secondary" className={classes.title}>
             For Docker
           </Typography>
-          <Typography variant="subtitle" color="secondary">
-            🏃Run the following command in the terminal to install and start the
-            service
+        </Grid>
+        <Grid container direction="column" justify="center" alignItems="center">
+          <Typography color="secondary" className={classes.font}>
+            🏃Run the following command in the terminal and start the service
           </Typography>
         </Grid>
-
         <Button
           variant="outlined"
           color="secondary"

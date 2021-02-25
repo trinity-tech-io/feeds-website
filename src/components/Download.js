@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { Grid } from "@material-ui/core";
+import CardContent from "@material-ui/core/CardContent";
 
 const useStyles = makeStyles((theme) => ({
   media: {
@@ -52,6 +53,33 @@ export default function Download() {
           href="https://apps.apple.com/us/app/trinity-feeds/id1546436333"
         >
           🍏 ios
+        </Button>
+
+        <Grid container direction="column" justify="center" alignItems="center">
+          <CardContent>
+            <Typography variant="h5" color="black" className={classes.font}>
+              If you're already using elastOS/elastOS essentials, you can sign
+              in🔑 with your existing DID. A temporary DID will be issued by
+              Feeds during onboarding for users without DIDs🛑. You can either
+              export🚢 that DID later to publish it onto the blockchain or you
+              can create one now🦸! Just click the button below and follow the
+              procedures from the site🌊
+            </Typography>
+          </CardContent>
+        </Grid>
+        <Grid container direction="column" justify="center" alignItems="center">
+          <Typography variant="h5" color="primary" className={classes.title}>
+            DID (Decentralized Identifier)
+          </Typography>
+        </Grid>
+
+        <Button
+          variant="contained"
+          color="primary"
+          className={classes.button}
+          href="https://www.getdids.com/"
+        >
+          🆔 Create DID
         </Button>
       </Grid>
     </div>
