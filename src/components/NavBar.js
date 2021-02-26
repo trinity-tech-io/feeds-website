@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
   navbarDisplayFlex: {
     display: `flex`,
-    justifyContent: `space-between`,
+    justifyContent: `flex-end`,
   },
   navListDisplayFlex: {
     display: `flex`,
@@ -61,17 +61,16 @@ function Navbar({ switchtheme }) {
       <HideOnScroll>
         <AppBar position="fixed">
           <Toolbar component="nav">
+            <NavLink
+              to="/"
+              activeStyle={{
+                background: "primary",
+                color: "primary",
+              }}
+            >
+              <img src={logo} className={classes.logo}></img>
+            </NavLink>
             <Container maxWidth="xl" className={classes.navbarDisplayFlex}>
-              <NavLink
-                to="/"
-                activeStyle={{
-                  background: "primary",
-                  color: "primary",
-                }}
-              >
-                <img src={logo} className={classes.logo}></img>
-              </NavLink>
-
               <Hidden smDown>
                 <List
                   component="nav"
@@ -100,6 +99,9 @@ function Navbar({ switchtheme }) {
               </Hidden>
 
               <Hidden mdUp>
+                <List className={classes.navListDisplayFlex}>
+                  {switchtheme}
+                </List>
                 <SideDrawer navLinks={navLinks} />
               </Hidden>
             </Container>
