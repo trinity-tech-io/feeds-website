@@ -4,11 +4,9 @@ import {
   Hidden,
   List,
   ListItem,
-  ListItemText,
   makeStyles,
   Toolbar,
   Fab,
-  Typography,
 } from "@material-ui/core";
 import { KeyboardArrowUp } from "@material-ui/icons";
 import * as React from "react";

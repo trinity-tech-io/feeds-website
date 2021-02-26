@@ -6,17 +6,11 @@ import Download from "../components/Download";
 import Manual from "../components/Manual";
 import FeedsCard from "../components/FeedsCard";
 import mobileimg from "../assets/feeds-onboarding.svg";
-import ownership from "../assets/feeds-ownership.svg";
-import privacy from "../assets/feeds-private.svg";
-import social from "../assets/feeds-social.svg";
-import decentralized from "../assets/feeds-decentralized.svg";
 import CodeIcon from "@material-ui/icons/Code";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
 import ComputerIcon from "@material-ui/icons/Computer";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
-
-const carouselimages = [ownership, privacy, social, decentralized];
 
 const cardInfos = [
   {
@@ -38,7 +32,7 @@ const cardInfos = [
     descr: `So, why Feeds?🤔 Well, with all the ongoing privacy and data breach, there's gotta be a way to safeguard our data right?  
      Here's where Feeds come into place. You're the sole owner of your data🔒 and only 👉YOU👈can control them however you want.
      Feeds also cannot be censored❌🚫 by any authority`,
-    content: <Features carouselimg={carouselimages} />,
+    content: <Features />,
     like: `599`,
     comment: `15`,
   },

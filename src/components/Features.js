@@ -6,6 +6,42 @@ import { Grid } from "@material-ui/core";
 import CardContent from "@material-ui/core/CardContent";
 import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import ownership from "../assets/feeds-ownership.svg";
+import privacy from "../assets/feeds-private.svg";
+import social from "../assets/feeds-social.svg";
+import decentralized from "../assets/feeds-decentralized.svg";
+
+const carouselInfos = [
+  {
+    index: 0,
+    imgsrc: ownership,
+    alt: "Own your data",
+    title: `✅ Data Ownership 🔱`,
+    descr: `Take back ownership of your data`,
+  },
+  {
+    index: 1,
+    imgsrc: privacy,
+    alt: "Private and secure",
+    title: `✅ Private ⛔`,
+    descr: `Your data is private and secure`,
+  },
+  {
+    index: 2,
+    imgsrc: social,
+    alt: "Share your feeds online",
+    title: `✅ Content-Sharing 🤝`,
+    descr: `Follow your favorite Feeds and share contents with friends and
+    family safely`,
+  },
+  {
+    index: 3,
+    imgsrc: decentralized,
+    alt: "Decentralized App",
+    title: `✅ Decentralized 🧱⛓️`,
+    descr: `No central authority`,
+  },
+];
 
 const useStyles = makeStyles((theme) => ({
   media: {
@@ -20,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Features({ carouselimg }) {
+export default function Features() {
   const classes = useStyles();
 
   return (
@@ -32,9 +68,6 @@ export default function Features({ carouselimg }) {
               TL;DR➡Decentralized Twitter🥳🎉
             </Typography>
           </CardContent>
-          <Typography variant="h5" color="secondary" className={classes.title}>
-            Features
-          </Typography>
         </Grid>
       </Grid>
       <CarouselProvider
@@ -44,119 +77,36 @@ export default function Features({ carouselimg }) {
         isPlaying={true}
       >
         <Slider>
-          <Slide index={0}>
-            <Grid
-              container
-              direction="column"
-              justify="center"
-              alignItems="center"
-            >
-              <img
-                src={carouselimg[0]}
-                alt="Own your data"
-                className={classes.media}
-              />
-              <Button
-                variant="contained"
-                color="primary"
-                className={classes.button}
+          {carouselInfos.map((carouselInfo, index) => (
+            <Slide key={index} index={carouselInfo.index}>
+              <Grid
+                container
+                direction="column"
+                justify="center"
+                alignItems="center"
               >
-                ✅ Data Ownership 🔱
-              </Button>
-              <Typography
-                variant="h6"
-                color="secondary"
-                className={classes.title}
-              >
-                Take back ownership of your data!
-              </Typography>
-            </Grid>
-          </Slide>
-          <Slide index={1}>
-            <Grid
-              container
-              direction="column"
-              justify="center"
-              alignItems="center"
-            >
-              <img
-                src={carouselimg[1]}
-                alt="Private and secure"
-                className={classes.media}
-              />
-              <Button
-                variant="contained"
-                color="primary"
-                className={classes.button}
-              >
-                ✅ Private ⛔
-              </Button>
-              <Typography
-                variant="h6"
-                color="secondary"
-                className={classes.title}
-              >
-                Your data is private and secure!
-              </Typography>
-            </Grid>
-          </Slide>
-          <Slide index={2}>
-            <Grid
-              container
-              direction="column"
-              justify="center"
-              alignItems="center"
-            >
-              <img
-                src={carouselimg[2]}
-                alt="Share your feeds online"
-                className={classes.media}
-              />
-              <Button
-                variant="contained"
-                color="primary"
-                className={classes.button}
-              >
-                ✅ Content-Sharing 🤝
-              </Button>
-              <Typography
-                variant="h6"
-                color="secondary"
-                className={classes.title}
-              >
-                Follow your favorite Feeds and share contents with friends and
-                family safely!
-              </Typography>
-            </Grid>
-          </Slide>
-          <Slide index={3}>
-            <Grid
-              container
-              direction="column"
-              justify="center"
-              alignItems="center"
-            >
-              <img
-                src={carouselimg[3]}
-                alt="Decentralized"
-                className={classes.media}
-              />
-              <Button
-                variant="contained"
-                color="primary"
-                className={classes.button}
-              >
-                ✅ Decentralized 🧱⛓️
-              </Button>
-              <Typography
-                variant="h6"
-                color="secondary"
-                className={classes.title}
-              >
-                No central authority!
-              </Typography>
-            </Grid>
-          </Slide>
+                <img
+                  src={carouselInfo.imgsrc}
+                  alt={carouselInfo.alt}
+                  className={classes.media}
+                />
+                <Button
+                  variant="contained"
+                  color="primary"
+                  className={classes.button}
+                >
+                  {carouselInfo.title}
+                </Button>
+                <Typography
+                  variant="h6"
+                  color="secondary"
+                  className={classes.title}
+                >
+                  {carouselInfo.descr}
+                </Typography>
+              </Grid>
+            </Slide>
+          ))}
         </Slider>
       </CarouselProvider>
     </div>
