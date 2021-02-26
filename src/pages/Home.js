@@ -31,7 +31,7 @@ const cardInfos = [
     username: `@Feeds-features`,
     descr: `So, why Feeds?🤔 Well, with all the ongoing privacy and data breach, there's gotta be a way to safeguard our data right?  
      Here's where Feeds come into place. You're the sole owner of your data🔒 and only 👉YOU👈can control them however you want.
-     Feeds also cannot be censored❌🚫 by any authority`,
+     Feeds also cannot be censored❌🚫 by any authority.`,
     content: <Features />,
     like: `599`,
     comment: `15`,
@@ -73,8 +73,8 @@ const cardInfos = [
 export default function Home() {
   return (
     <div>
-      <div data-aos="fade-right" data-aos-duration="1000">
-        {cardInfos.map((cardInfo, index) => (
+      {cardInfos.map((cardInfo, index) => (
+        <div data-aos="fade-up" data-aos-duration="1000">
           <FeedsCard
             key={index}
             id={cardInfo.id}
@@ -86,8 +86,8 @@ export default function Home() {
             like={cardInfo.like}
             comment={cardInfo.comment}
           />
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }

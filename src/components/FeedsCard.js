@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
     width: 600,
     marginTop: 15,
     padding: 15,
-    // borderStyle: "solid",
     borderColor: "#f2f2f2",
   },
   media: {
