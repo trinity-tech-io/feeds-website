@@ -57,7 +57,7 @@ const useStyles = makeStyles(({ typography, palette, breakpoints }) => ({
 export const Footer = React.memo(function NeptuneAppFooter() {
   const classes = useStyles();
   return (
-    <Box bgcolor={"background.paper"} width={"100%"}>
+    <Box width={"100%"}>
       <Container>
         <Box pt={8} pb={2}>
           <Row wrap>

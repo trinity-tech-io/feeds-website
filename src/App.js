@@ -70,9 +70,9 @@ function App() {
       <ThemeProvider theme={theme}>
         <Helmet>
           {palletType == "dark" ? (
-            <style>{`body{background: #424242;`}</style>
+            <style>{`body{background: #2e2638;`}</style>
           ) : (
-            <style>{`body{background: #fff;`}</style>
+            <style>{`body{background: #f7f2ff;`}</style>
           )}
         </Helmet>
         {/* <Container className={classes.root}> */}
