@@ -67,7 +67,7 @@ export default function FeedsService() {
           variant="contained"
           color="secondary"
           className={classes.button}
-          href="https://github.com/elastos-trinity/feeds-service/releases/download/release-v1.5.0/feedsd_1.5.0_amd64_ubuntu_2004.deb"
+          href="https://download.trinity-feeds.app/feeds-service/feedsd_amd64_ubuntu_2004.deb"
         >
           🐧 Linux
         </Button>
@@ -75,7 +75,7 @@ export default function FeedsService() {
           variant="contained"
           color="secondary"
           className={classes.button}
-          href="https://github.com/elastos-trinity/feeds-service/releases/download/release-v1.5.0/feedsd_1.5.0_armhf_raspbian.deb"
+          href="https://download.trinity-feeds.app/feeds-service/feedsd_armhf_raspbian.deb"
         >
           🍓 Raspberry Pi
         </Button>
@@ -83,7 +83,7 @@ export default function FeedsService() {
           variant="contained"
           color="secondary"
           className={classes.button}
-          href="https://github.com/elastos-trinity/feeds-service/releases/download/release-v1.5.0/Feeds.Service.app.macos.zip.zip"
+          href="https://download.trinity-feeds.app/feeds-service/Feeds.Service.app.macos.zip"
         >
           🍏 Mac OS
         </Button>
