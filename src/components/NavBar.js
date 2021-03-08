@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const navLink = [
+const navLinks = [
   { title: `Features`, path: `#features` },
   { title: `Node`, path: `#feeds-service` },
   { title: `App`, path: `#app` },
@@ -55,7 +55,6 @@ const navLink = [
 
 function Navbar({ switchtheme, showNav }) {
   const classes = useStyles();
-  const navLinks = showNav ? navLink : [];
   return (
     <>
       <HideOnScroll>
@@ -77,21 +76,21 @@ function Navbar({ switchtheme, showNav }) {
                   aria-labelledby="main navigation"
                   className={classes.navListDisplayFlex}
                 >
-                  {navLinks.map(({ title, path }) => (
-                    <a key={title} className={classes.linkText}>
-                      <ListItem button>
-                        <Link
-                          className={classes.linkText}
-                          activeClass="active"
-                          to={path.substring(1)} //remove the # for Link tag to work
-                          spy={true}
-                          smooth={true}
-                        >
-                          {title}
-                        </Link>
-                      </ListItem>
-                    </a>
-                  ))}
+                  {showNav && (navLinks.map(({ title, path }) => (
+                        <a key={title} className={classes.linkText}>
+                          <ListItem button>
+                            <Link
+                                className={classes.linkText}
+                                activeClass="active"
+                                to={path.substring(1)} //remove the # for Link tag to work
+                                spy={true}
+                                smooth={true}
+                            >
+                              {title}
+                            </Link>
+                          </ListItem>
+                        </a>
+                    )))}
                 </List>
                 <List className={classes.navListDisplayFlex}>
                   {switchtheme}
@@ -102,7 +101,7 @@ function Navbar({ switchtheme, showNav }) {
                 <List className={classes.navListDisplayFlex}>
                   {switchtheme}
                 </List>
-                <SideDrawer navLinks={navLinks} />
+                {showNav > 0 && (<SideDrawer navLinks={navLinks} />)}
               </Hidden>
             </Container>
           </Toolbar>
