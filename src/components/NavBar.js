@@ -46,16 +46,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const navLinks = [
+const navLink = [
   { title: `Features`, path: `#features` },
   { title: `Node`, path: `#feeds-service` },
   { title: `App`, path: `#app` },
   { title: `Manual`, path: `#manual` },
 ];
 
-function Navbar({ switchtheme }) {
+function Navbar({ switchtheme, showNav }) {
   const classes = useStyles();
-
+  const navLinks = showNav ? navLink : [];
   return (
     <>
       <HideOnScroll>

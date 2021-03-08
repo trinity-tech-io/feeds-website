@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react"
 import {
   BrowserRouter as Router,
   Route,
   Link,
   Switch as SwitchRouter,
+  withRouter
 } from "react-router-dom";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
@@ -11,6 +12,7 @@ import { Helmet } from "react-helmet";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import Disclaimer from "./pages/Disclaimer";
 //import Switch from "@material-ui/core/Switch";
 import DarkModeToggle from "react-dark-mode-toggle";
 // Animate on scroll initialization
@@ -29,11 +31,22 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function App() {
+function App(props) {
   const classes = useStyles();
 
   const [darkMode, setDarkMode] = useState(false);
   const palletType = darkMode ? "dark" : "light";
+
+  const [nav, setNav] = useState(true);
+
+  useEffect(() => {
+    if(props.location.pathname === "/disclaimer") {
+      setNav(false);
+    } else {
+      setNav(true);
+    }
+  })
+
 
   const handleThemeChange = () => {
     setDarkMode(!darkMode);
@@ -66,7 +79,7 @@ function App() {
   );
 
   return (
-    <Router>
+    //<Router>
       <ThemeProvider theme={theme}>
         <Helmet>
           {palletType == "dark" ? (
@@ -76,15 +89,16 @@ function App() {
           )}
         </Helmet>
         {/* <Container className={classes.root}> */}
-        <NavBar switchtheme={switchTheme} />
+        <NavBar switchtheme={switchTheme} showNav={nav} />
 
         <SwitchRouter>
           <Route path="/" exact component={Home} />
+          <Route path="/disclaimer" exact component={Disclaimer} />
         </SwitchRouter>
         <Footer />
       </ThemeProvider>
-    </Router>
+  //</Router>
   );
 }
 
-export default App;
+export default withRouter(App);
