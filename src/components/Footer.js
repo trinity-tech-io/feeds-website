@@ -128,7 +128,7 @@ export const Footer = React.memo(function NeptuneAppFooter() {
                   </NavItem>
                   <NavItem
                     className={cx(classes.legalLink)}
-                    href={"https://trinitytech.io/disclaimer.html"}
+                    href={"/disclaimer"}
                   >
                     Disclaimer
                   </NavItem>

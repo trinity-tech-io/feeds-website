@@ -48,7 +48,7 @@ export default function FeedsCard({
   avatarimg,
   title,
   username,
-  descr,
+  descrs,
   content,
   like,
   comment,
@@ -78,7 +78,7 @@ export default function FeedsCard({
             subheader={username}
           />
           <CardContent>
-            <Typography variant="h5">{descr}</Typography>
+            {descrs.map((descr) => (<Typography variant="h5">{descr}</Typography>))}
           </CardContent>
           <Grid container direction="row" justify="center">
             <Content feedsContent={content} />
