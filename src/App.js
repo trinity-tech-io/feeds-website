@@ -79,25 +79,23 @@ function App(props) {
   );
 
   return (
-    //<Router>
-      <ThemeProvider theme={theme}>
-        <Helmet>
-          {palletType == "dark" ? (
-            <style>{`body{background: #2e2638;`}</style>
-          ) : (
-            <style>{`body{background: #f7f2ff;`}</style>
-          )}
-        </Helmet>
-        {/* <Container className={classes.root}> */}
-        <NavBar switchtheme={switchTheme} showNav={nav} />
+    <ThemeProvider theme={theme}>
+      <Helmet>
+        {palletType == "dark" ? (
+          <style>{`body{background: #2e2638;`}</style>
+        ) : (
+          <style>{`body{background: #f7f2ff;`}</style>
+        )}
+      </Helmet>
+      {/* <Container className={classes.root}> */}
+      <NavBar switchtheme={switchTheme} showNav={nav} />
 
-        <SwitchRouter>
-          <Route path="/" exact component={Home} />
-          <Route path="/disclaimer" exact component={Disclaimer} />
-        </SwitchRouter>
-        <Footer />
-      </ThemeProvider>
-  //</Router>
+      <SwitchRouter>
+        <Route path="/" exact component={Home} />
+        <Route path="/disclaimer" exact component={Disclaimer} />
+      </SwitchRouter>
+      <Footer />
+    </ThemeProvider>
   );
 }
 
