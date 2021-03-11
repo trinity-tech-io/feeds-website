@@ -31,6 +31,7 @@ export default function Manual() {
           color="secondary"
           className={classes.button}
           href="https://github.com/elastos-trinity/feeds-manual-docs/blob/master/Feeds_Manual_en.md"
+          target="_blank"
         >
           👑 English
         </Button>
@@ -39,6 +40,7 @@ export default function Manual() {
           color="secondary"
           className={classes.button}
           href="https://github.com/elastos-trinity/feeds-manual-docs/blob/master/Feeds_Manual_zh.md"
+          target="_blank"
         >
           🐼 Chinese
         </Button>
@@ -47,6 +49,7 @@ export default function Manual() {
           color="secondary"
           className={classes.button}
           href="https://web.telegram.org/#/im?p=@feedscapsule"
+          target="_blank"
         >
           ✈️ Telegram Channel
         </Button>
