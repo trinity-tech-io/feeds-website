@@ -35,6 +35,7 @@ export default function Download() {
           color="primary"
           className={classes.button}
           href="https://scheme.elastos.org/app?id=io.trinity-tech.dapp.feeds"
+          target="_blank"
         >
           💊 elastOS
         </Button>
@@ -43,6 +44,7 @@ export default function Download() {
           color="primary"
           className={classes.button}
           href="https://play.google.com/store/apps/details?id=io.trinitytech.dapp.feeds"
+          target="_blank"
         >
           🤖 Android
         </Button>
@@ -51,6 +53,7 @@ export default function Download() {
           color="primary"
           className={classes.button}
           href="https://apps.apple.com/us/app/trinity-feeds/id1546436333"
+          target="_blank"
         >
           🍏 ios
         </Button>
@@ -78,6 +81,7 @@ export default function Download() {
           color="primary"
           className={classes.button}
           href="https://www.getdids.com/"
+          target="_blank"
         >
           🆔 Create DID
         </Button>

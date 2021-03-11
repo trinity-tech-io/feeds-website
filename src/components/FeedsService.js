@@ -100,6 +100,7 @@ export default function FeedsService() {
           color="secondary"
           className={classes.button}
           href="https://github.com/elastos-trinity/feeds-service/releases"
+          target="_blank"
         >
           😺 Github
         </Button>

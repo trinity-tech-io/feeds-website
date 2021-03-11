@@ -9,6 +9,7 @@ import { ColumnToRow, Row, Item } from "@mui-treasury/components/flex";
 import { NavMenu, NavItem } from "@mui-treasury/components/menu/navigation";
 import { NavLink } from "react-router-dom";
 import IconButton from "@material-ui/core/IconButton";
+import Link from "@material-ui/core/Link";
 import TelegramIcon from "@material-ui/icons/Telegram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { usePlainNavigationMenuStyles } from "@mui-treasury/styles/navigationMenu/plain";
@@ -87,22 +88,25 @@ export const Footer = React.memo(function NeptuneAppFooter() {
             </Item>
             <Item grow maxWidth={500} mx={"auto"}>
               <Box textAlign={"right"} mt={{ xs: 2, md: 0 }} my={2}>
-                <IconButton
-                  aria-label="Twitter"
-                  href={"https://twitter.com/elastOSFeeds"}
-                  color="primary"
-                  className={classes.onHover}
-                >
-                  <TwitterIcon />
-                </IconButton>
-                <IconButton
-                  aria-label="Telegram"
-                  href={"https://web.telegram.org/#/im?p=@feedscapsule"}
-                  color="primary"
-                  className={classes.onHover}
-                >
-                  <TelegramIcon />
-                </IconButton>
+                <Link href={"https://twitter.com/elastOSFeeds"} target="_blank">
+                  <IconButton
+                      aria-label="Twitter"
+                      color="primary"
+                      className={classes.onHover}
+                  >
+                    <TwitterIcon />
+                  </IconButton>
+                </Link>
+
+                <Link href={"https://web.telegram.org/#/im?p=@feedscapsule"} target="_blank">
+                  <IconButton
+                      aria-label="Telegram"
+                      color="primary"
+                      className={classes.onHover}
+                  >
+                    <TelegramIcon />
+                  </IconButton>
+                </Link>
               </Box>
             </Item>
           </Row>
@@ -123,12 +127,14 @@ export const Footer = React.memo(function NeptuneAppFooter() {
                   <NavItem
                     className={cx(classes.legalLink)}
                     href={"https://trinitytech.io/privacy_policy.html"}
+                    target="_blank"
                   >
                     Privacy Policy
                   </NavItem>
                   <NavItem
                     className={cx(classes.legalLink)}
                     href={"/disclaimer"}
+                    target="_blank"
                   >
                     Disclaimer
                   </NavItem>
