@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 function App(props) {
   const classes = useStyles();
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(window.localStorage.getItem('darkMode') === 'true');
   const palletType = darkMode ? "dark" : "light";
 
   const [nav, setNav] = useState(true);
@@ -49,7 +49,9 @@ function App(props) {
 
 
   const handleThemeChange = () => {
-    setDarkMode(!darkMode);
+    let status = !darkMode;
+    setDarkMode(status);
+    window.localStorage.setItem('darkMode', status.toString())
   };
 
   const theme = createMuiTheme({
