@@ -26,7 +26,7 @@ export default function Download() {
       <Grid container direction="column" justify="center">
         <Grid container direction="column" justify="center" alignItems="center">
           <Typography variant="h5" color="primary" className={classes.title}>
-            Download Feeds App
+            App store/Play Store
           </Typography>
         </Grid>
         <Button
@@ -46,6 +46,22 @@ export default function Download() {
           target="_blank"
         >
           🍏 ios
+        </Button>
+
+        <Grid container direction="column" justify="center" alignItems="center">
+          <Typography variant="h5" color="primary" className={classes.title}>
+             Source Code
+          </Typography>
+        </Grid>
+
+        <Button
+            variant="contained"
+            color="primary"
+            className={classes.button}
+            href="http://download.elastos.org/app/trinity-feeds/feeds.apk"
+            target="_blank"
+        >
+          🤖 Android APK
         </Button>
 
         <Grid container direction="column" justify="center" alignItems="center">
