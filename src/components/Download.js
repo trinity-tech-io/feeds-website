@@ -59,6 +59,22 @@ export default function Download() {
         </Button>
 
         <Grid container direction="column" justify="center" alignItems="center">
+          <Typography variant="h5" color="primary" className={classes.title}>
+            Android APK
+          </Typography>
+        </Grid>
+
+        <Button
+          variant="contained"
+          color="primary"
+          className={classes.button}
+          href="http://download.elastos.org/app/trinity-feeds/feeds.apk"
+          target="_blank"
+        >
+          🤖 Android
+        </Button>
+
+        <Grid container direction="column" justify="center" alignItems="center">
           <CardContent>
             <Typography variant="h5" color="black" className={classes.font}>
               If you're already using elastOS/elastOS essentials, you can sign
