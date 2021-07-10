@@ -6,7 +6,7 @@ import Download from "../components/Download";
 import Manual from "../components/Manual";
 import FeedsCard from "../components/FeedsCard";
 // import mobileimg from "../assets/feeds-onboarding.svg";
-import mobileimg from "../assets/feeds-mobile-transparent.png";
+import mobileimg from "../assets/feeds-pasar.gif";
 import CodeIcon from "@material-ui/icons/Code";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
 import ComputerIcon from "@material-ui/icons/Computer";
@@ -20,8 +20,7 @@ const cardInfos = [
     title: `Feeds`,
     username: `@Feeds-dev`,
     descrs: [
-      `Hi!👋 Welcome to Feeds, a decentralized social application where users remain in full
-    control of their own data! Feeds is now available on elastOS, Android and iOS! #ownyourdata ❤️❤️`,
+      `Hi!👋 Welcome to Feeds! NFT marketplace is now available on V2.0! #ownyourdata ❤️❤️`,
     ],
     content: <Banner img={mobileimg} />,
     like: `15`,

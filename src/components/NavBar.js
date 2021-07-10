@@ -76,21 +76,22 @@ function Navbar({ switchtheme, showNav }) {
                   aria-labelledby="main navigation"
                   className={classes.navListDisplayFlex}
                 >
-                  {showNav && (navLinks.map(({ title, path }) => (
-                        <a key={title} className={classes.linkText}>
-                          <ListItem button>
-                            <Link
-                                className={classes.linkText}
-                                activeClass="active"
-                                to={path.substring(1)} //remove the # for Link tag to work
-                                spy={true}
-                                smooth={true}
-                            >
-                              {title}
-                            </Link>
-                          </ListItem>
-                        </a>
-                    )))}
+                  {showNav &&
+                    navLinks.map(({ title, path }) => (
+                      <a key={title} className={classes.linkText}>
+                        <ListItem button>
+                          <Link
+                            className={classes.linkText}
+                            activeClass="active"
+                            to={path.substring(1)} //remove the # for Link tag to work
+                            spy={true}
+                            smooth={true}
+                          >
+                            {title}
+                          </Link>
+                        </ListItem>
+                      </a>
+                    ))}
                 </List>
                 <List className={classes.navListDisplayFlex}>
                   {switchtheme}
@@ -101,7 +102,7 @@ function Navbar({ switchtheme, showNav }) {
                 <List className={classes.navListDisplayFlex}>
                   {switchtheme}
                 </List>
-                {showNav > 0 && (<SideDrawer navLinks={navLinks} />)}
+                {showNav > 0 && <SideDrawer navLinks={navLinks} />}
               </Hidden>
             </Container>
           </Toolbar>

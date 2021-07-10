@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from "react"
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
   Link,
   Switch as SwitchRouter,
-  withRouter
+  withRouter,
 } from "react-router-dom";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import Pasar from "./pages/Pasar";
 import Disclaimer from "./pages/Disclaimer";
 //import Switch from "@material-ui/core/Switch";
 import DarkModeToggle from "react-dark-mode-toggle";
@@ -40,13 +41,15 @@ function App(props) {
   const [nav, setNav] = useState(true);
 
   useEffect(() => {
-    if(props.location.pathname === "/disclaimer") {
+    if (
+      (props.location.pathname === "/disclaimer") |
+      (props.location.pathname === "/pasar")
+    ) {
       setNav(false);
     } else {
       setNav(true);
     }
-  })
-
+  });
 
   const handleThemeChange = () => {
     setDarkMode(!darkMode);
@@ -92,6 +95,7 @@ function App(props) {
 
       <SwitchRouter>
         <Route path="/" exact component={Home} />
+        <Route path="/pasar" exact component={Pasar} />
         <Route path="/disclaimer" exact component={Disclaimer} />
       </SwitchRouter>
       <Footer />
