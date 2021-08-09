@@ -13,6 +13,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Disclaimer from "./pages/Disclaimer";
+import DisclaimerNFT from "./pages/DisclaimerNFT";
 //import Switch from "@material-ui/core/Switch";
 import DarkModeToggle from "react-dark-mode-toggle";
 // Animate on scroll initialization
@@ -95,6 +96,7 @@ function App(props) {
       <SwitchRouter>
         <Route path="/" exact component={Home} />
         <Route path="/disclaimer" exact component={Disclaimer} />
+        <Route path="/disclaimer-nft" exact component={DisclaimerNFT} />
       </SwitchRouter>
       <Footer />
     </ThemeProvider>
