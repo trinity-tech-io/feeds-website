@@ -32,9 +32,9 @@ const cardInfos = [
     title: `Features`,
     username: `@Feeds-features`,
     descrs: [
-      `So, why Feeds?🤔 Well, with all the ongoing privacy and data breach, there's gotta be a way to safeguard our data right?  
+      `So, why Feeds?🤔 Well, with all the ongoing privacy and data breaches, there's gotta be a way to safeguard our data right?  
      Here's where Feeds come into place. You're the sole owner of your data🔒 and only 👉YOU👈can control them however you want.
-     Feeds also cannot be censored❌🚫 by any authority.`,
+     Feeds also cannot be censored❌🚫 by authorities.`,
     ],
     content: <Features />,
     like: `599`,
@@ -46,7 +46,7 @@ const cardInfos = [
     title: `Feeds Service Node`,
     username: `@Feeds-service`,
     descrs: [
-      `Wait a minute!🙈🙉🙊 Before you can start using Feeds on your mobile phone📱, you need Feeds Service in order to run a node for storing your data.
+      `Wait a minute!🙈🙉🙊 If you plan to browse channels in Feeds as a reader/consumer, you can skip this step. As for creators you will need to create a Publisher Account from Feeds Service in order to run a node for storing your data.
       Download the installer💻, run it and open ➡️localhost:10080 in the local browser to receive your Publisher Account QR code.`,
     ],
     content: <FeedsService />,
@@ -72,7 +72,7 @@ const cardInfos = [
     title: `Manual`,
     username: `@Feeds-manual`,
     descrs: [
-      `If you have any problem😕, feel free to browse the manual🔧 from the link below or you can join our Telegram channel and ask us there!🔥`,
+      `If you have any problems😕, feel free to browse the manual🔧 from the link below or you can join our Telegram channel and ask us there!🔥`,
     ],
     content: <Manual />,
     like: `85`,

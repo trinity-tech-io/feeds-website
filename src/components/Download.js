@@ -26,19 +26,10 @@ export default function Download() {
       <Grid container direction="column" justify="center">
         <Grid container direction="column" justify="center" alignItems="center">
           <Typography variant="h5" color="primary" className={classes.title}>
-            Download Feeds Capsule/Native App
+            Playstore/App Store
           </Typography>
         </Grid>
 
-        <Button
-          variant="contained"
-          color="primary"
-          className={classes.button}
-          href="https://scheme.elastos.org/app?id=io.trinity-tech.dapp.feeds"
-          target="_blank"
-        >
-          💊 elastOS
-        </Button>
         <Button
           variant="contained"
           color="primary"
