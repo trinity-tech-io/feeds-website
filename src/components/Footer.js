@@ -90,19 +90,22 @@ export const Footer = React.memo(function NeptuneAppFooter() {
               <Box textAlign={"right"} mt={{ xs: 2, md: 0 }} my={2}>
                 <Link href={"https://twitter.com/elastOSFeeds"} target="_blank">
                   <IconButton
-                      aria-label="Twitter"
-                      color="primary"
-                      className={classes.onHover}
+                    aria-label="Twitter"
+                    color="primary"
+                    className={classes.onHover}
                   >
                     <TwitterIcon />
                   </IconButton>
                 </Link>
 
-                <Link href={"https://web.telegram.org/#/im?p=@feedscapsule"} target="_blank">
+                <Link
+                  href={"https://web.telegram.org/#/im?p=@feedscapsule"}
+                  target="_blank"
+                >
                   <IconButton
-                      aria-label="Telegram"
-                      color="primary"
-                      className={classes.onHover}
+                    aria-label="Telegram"
+                    color="primary"
+                    className={classes.onHover}
                   >
                     <TelegramIcon />
                   </IconButton>
@@ -136,7 +139,14 @@ export const Footer = React.memo(function NeptuneAppFooter() {
                     href={"/disclaimer"}
                     target="_blank"
                   >
-                    Disclaimer
+                    Disclaimer(Feeds dApp)
+                  </NavItem>
+                  <NavItem
+                    className={cx(classes.legalLink)}
+                    href={"/disclaimer-nft"}
+                    target="_blank"
+                  >
+                    Disclaimer(Feeds NFT)
                   </NavItem>
                 </ColumnToRow>
               </NavMenu>
