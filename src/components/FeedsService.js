@@ -7,9 +7,9 @@ import { Grid } from "@material-ui/core";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
 
-function Alert(props) {
-  return <MuiAlert elevation={6} variant="filled" {...props} />;
-}
+// function Alert(props) {
+//   return <MuiAlert elevation={6} variant="filled" {...props} />;
+// }
 
 const useStyles = makeStyles((theme) => ({
   media: {
@@ -60,17 +60,18 @@ export default function FeedsService() {
       <Grid container direction="column" justify="center">
         <Grid container direction="column" justify="center" alignItems="center">
           <Typography variant="h5" color="secondary" className={classes.title}>
-            Choose Your Platform
+            Choose Your Platform <span style={{fontSize:"0.9rem"}}>(version 2.0.1)</span>
           </Typography>
         </Grid>
         <Button
-          variant="contained"
-          color="secondary"
-          className={classes.button}
-          href="https://download.trinity-feeds.app/feeds-service/feedsd_amd64_ubuntu_2004.deb"
+            variant="contained"
+            color="secondary"
+            className={classes.button}
+            href="https://download.trinity-feeds.app/feeds-service/feedsd_amd64_ubuntu_2004.deb"
         >
           🐧 Linux
         </Button>
+
         <Button
           variant="contained"
           color="secondary"
@@ -91,9 +92,9 @@ export default function FeedsService() {
           variant="contained"
           color="secondary"
           className={classes.button}
-          // href="#"
+          href="https://download.trinity-feeds.app/feeds-service/Feeds.Service.app.windows.zip"
         >
-          🖥️ Windows (Coming Soon)
+          🖥️ Windows
         </Button>
         <Button
           variant="contained"

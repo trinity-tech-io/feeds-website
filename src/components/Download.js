@@ -26,19 +26,9 @@ export default function Download() {
       <Grid container direction="column" justify="center">
         <Grid container direction="column" justify="center" alignItems="center">
           <Typography variant="h5" color="primary" className={classes.title}>
-            Download Feeds Capsule/Native App
+            App store/Play Store
           </Typography>
         </Grid>
-
-        <Button
-          variant="contained"
-          color="primary"
-          className={classes.button}
-          href="https://scheme.elastos.org/app?id=io.trinity-tech.dapp.feeds"
-          target="_blank"
-        >
-          💊 elastOS
-        </Button>
         <Button
           variant="contained"
           color="primary"
@@ -59,9 +49,25 @@ export default function Download() {
         </Button>
 
         <Grid container direction="column" justify="center" alignItems="center">
+          <Typography variant="h5" color="primary" className={classes.title}>
+             Direct download link
+          </Typography>
+        </Grid>
+
+        <Button
+            variant="contained"
+            color="primary"
+            className={classes.button}
+            href="http://download.elastos.org/app/trinity-feeds/feeds.apk"
+            target="_blank"
+        >
+          🤖 Android APK
+        </Button>
+
+        <Grid container direction="column" justify="center" alignItems="center">
           <CardContent>
             <Typography variant="h5" color="black" className={classes.font}>
-              If you're already using elastOS/elastOS essentials, you can sign
+              If you're already using Elastos Essentials, you can sign
               in🔑 with your existing DID. A temporary DID will be issued by
               Feeds during onboarding for users without DIDs🛑. You can either
               export🚢 that DID and publish it to the blockchain later or you

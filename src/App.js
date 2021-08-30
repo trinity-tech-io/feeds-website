@@ -13,6 +13,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Disclaimer from "./pages/Disclaimer";
+import DisclaimerNFT from "./pages/DisclaimerNFT";
 //import Switch from "@material-ui/core/Switch";
 import DarkModeToggle from "react-dark-mode-toggle";
 // Animate on scroll initialization
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
 function App(props) {
   const classes = useStyles();
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(window.localStorage.getItem('darkMode') === 'true');
   const palletType = darkMode ? "dark" : "light";
 
   const [nav, setNav] = useState(true);
@@ -49,7 +50,9 @@ function App(props) {
 
 
   const handleThemeChange = () => {
-    setDarkMode(!darkMode);
+    let status = !darkMode;
+    setDarkMode(status);
+    window.localStorage.setItem('darkMode', status.toString())
   };
 
   const theme = createMuiTheme({
@@ -93,6 +96,7 @@ function App(props) {
       <SwitchRouter>
         <Route path="/" exact component={Home} />
         <Route path="/disclaimer" exact component={Disclaimer} />
+        <Route path="/disclaimer-nft" exact component={DisclaimerNFT} />
       </SwitchRouter>
       <Footer />
     </ThemeProvider>
