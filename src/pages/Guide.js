@@ -3,21 +3,23 @@ import FeedsCard from "../components/FeedsCard";
 import WindowsMac from "../components/WindowsMac";
 import PiLinux from "../components/PiLinux";
 import ServiceIntro from "../components/ServiceIntro";
-import MenuBookIcon from "@material-ui/icons/MenuBook";
+import WifiIcon from "@material-ui/icons/Wifi";
 import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
 import StorageIcon from "@material-ui/icons/Storage";
 
 const cardInfos = [
   {
     id: "guideIntro",
-    avatarimg: <MenuBookIcon />,
+    avatarimg: <WifiIcon />,
     title: `Feeds Service`,
     username: `@Feeds-guide`,
     descrs: [
-      `In order to upgrade from Basic Account to Publisher Account, you have to install Feeds Service!✨
-      Check the installation guide below for more details.`,
+      `In order to upgrade from Basic Account to Publisher Account, you have to install Feeds Service to unlock more features!✨
+      Choose your preferred platform below.`,
     ],
     content: <ServiceIntro />,
+    like: `34`,
+    comment: `37`,
   },
   {
     id: "guideWM",
@@ -26,6 +28,8 @@ const cardInfos = [
     username: `@guide-windows-mac`,
     descrs: [``],
     content: <WindowsMac />,
+    like: `48`,
+    comment: `38`,
   },
   {
     id: "guidePL",
@@ -34,6 +38,8 @@ const cardInfos = [
     username: `@guide-raspberry-pi-linux`,
     descrs: [``],
     content: <PiLinux />,
+    like: `342`,
+    comment: `3`,
   },
 ];
 
@@ -50,6 +56,8 @@ export default function Guide() {
             username={cardInfo.username}
             descrs={cardInfo.descrs}
             content={cardInfo.content}
+            like={cardInfo.like}
+            comment={cardInfo.comment}
           />
         </div>
       ))}

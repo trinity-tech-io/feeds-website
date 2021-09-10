@@ -50,7 +50,7 @@ const navLinks = [
   { title: `Features`, path: `#features` },
   { title: `Node`, path: `#feeds-service` },
   { title: `App`, path: `#app` },
-  { title: `Manual`, path: `#manual` },
+  { title: `Resources`, path: `#resources` },
 ];
 
 function Navbar({ switchtheme, showNav }) {

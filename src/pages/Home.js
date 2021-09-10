@@ -46,8 +46,8 @@ const cardInfos = [
     title: `Feeds Service Node`,
     username: `@Feeds-service`,
     descrs: [
-      `Wait a minute!🙈🙉🙊 If you plan to browse channels in Feeds as a reader/consumer, you can skip this step. As for creators you will need to create a Publisher Account from Feeds Service in order to run a node for storing your data.
-      Download the installer💻, run it and open ➡️localhost:10018 in the local browser to receive your Publisher Account QR code.`,
+      `Wait a minute!🙈🙉🙊 If you plan to browse channels in Feeds as a reader using the Basic Account, you can skip this step. As for creators you will need to create a Publisher Account from Feeds Service in order to run a node for storing your data.
+      Follow the steps to install Feeds Service from the link below:`,
     ],
     content: <FeedsService />,
     like: `116`,
@@ -67,10 +67,10 @@ const cardInfos = [
     comment: `2`,
   },
   {
-    id: "manual",
+    id: "resources",
     avatarimg: <MenuBookIcon />,
-    title: `Manual`,
-    username: `@Feeds-manual`,
+    title: `Resources`,
+    username: `@Feeds-resources`,
     descrs: [
       `If you have any problems😕, feel free to browse the manual🔧 from the link below or you can join our Telegram channel and ask us there!🔥`,
     ],

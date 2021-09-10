@@ -59,6 +59,15 @@ export default function FeedsService() {
     <div>
       <Grid container direction="column" justify="center">
         <Grid container direction="column" justify="center" alignItems="center">
+          <Button
+            variant="outlined"
+            color="secondary"
+            className={classes.button}
+            href="/guide"
+            target="_blank"
+          >
+            📦 Feeds Service Installation Guide
+          </Button>
           <Typography variant="h5" color="secondary" className={classes.title}>
             Choose Your Platform
             <span style={{ fontSize: "0.9rem" }}> v2.0.1</span>
@@ -112,7 +121,7 @@ export default function FeedsService() {
           href="https://store.elabox.com/"
           target="_blank"
         >
-          📦 Elabox
+          📦 Purchase Elabox
         </Button>
         <Grid container direction="column" justify="center" alignItems="center">
           <Typography variant="h5" color="secondary" className={classes.title}>

@@ -74,8 +74,11 @@ export const Footer = React.memo(function NeptuneAppFooter() {
                   </NavLink>
                 </Item>
                 <Item>
-                  <Typography variant={"h6"} color={"textSecondary"}>
-                    Feeds
+                  <Typography variant={"body1"} color={"textSecondary"}>
+                    Buy us a coffee ☕
+                  </Typography>
+                  <Typography variant={"caption"} color={"textSecondary"}>
+                    ELA Address : EYWDcCyp6czaqAKGiq4b7exhWJfVpbG2D9
                   </Typography>
                 </Item>
               </Row>

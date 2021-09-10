@@ -23,9 +23,6 @@ export default function Manual() {
   return (
     <div>
       <Grid container direction="column" justify="center">
-        <Typography variant="h5" color="secondary" className={classes.title}>
-          Installation Guide/Manual
-        </Typography>
         <Button
           variant="outlined"
           color="secondary"
@@ -34,6 +31,24 @@ export default function Manual() {
           target="_blank"
         >
           📦 Feeds Service Installation Guide
+        </Button>
+        <Button
+          variant="outlined"
+          color="secondary"
+          className={classes.button}
+          href="https://medium.com/@asralf/q-what-is-feeds-757ca2fbc59b"
+          target="_blank"
+        >
+          📖 Learn More About Feeds
+        </Button>
+        <Button
+          variant="outlined"
+          color="secondary"
+          className={classes.button}
+          href="https://twitter.com/elastOSFeeds"
+          target="_blank"
+        >
+          🐦 Twitter
         </Button>
         <Button
           variant="outlined"
