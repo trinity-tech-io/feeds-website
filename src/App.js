@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Pasar from "./pages/Pasar";
+// import Pasar from "./pages/Pasar";
 import Guide from "./pages/Guide";
 import Disclaimer from "./pages/Disclaimer";
 import DisclaimerNFT from "./pages/DisclaimerNFT";
@@ -46,8 +46,8 @@ function App(props) {
     if (
       (props.location.pathname === "/disclaimer") |
       (props.location.pathname === "/disclaimer-nft") |
-      (props.location.pathname === "/guide") |
-      (props.location.pathname === "/pasar")
+      (props.location.pathname === "/guide")
+      // (props.location.pathname === "/pasar")
     ) {
       setNav(false);
     } else {
@@ -99,7 +99,6 @@ function App(props) {
 
       <SwitchRouter>
         <Route path="/" exact component={Home} />
-        <Route path="/pasar" exact component={Pasar} />
         <Route path="/guide" exact component={Guide} />
         <Route path="/disclaimer" exact component={Disclaimer} />
         <Route path="/disclaimer-nft" exact component={DisclaimerNFT} />

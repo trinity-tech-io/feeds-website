@@ -20,7 +20,7 @@ export default function Banner({ img }) {
           alt="Available on elastOs, Android and iOS!"
           className={classes.media}
         />
-        <Grid container direction="row" justify="center">
+        {/* <Grid container direction="row" justify="center">
           <Button
             variant="contained"
             color="primary"
@@ -29,7 +29,7 @@ export default function Banner({ img }) {
           >
             🎨 Explore Pasar
           </Button>
-        </Grid>
+        </Grid> */}
       </Grid>
     </div>
   );

@@ -77,17 +77,9 @@ export default function FeedsService() {
           variant="contained"
           color="secondary"
           className={classes.button}
-          href="https://download.trinity-feeds.app/feeds-service/feedsd_amd64_ubuntu_2004.deb"
+          href="https://download.trinity-feeds.app/feeds-service/Feeds.Service.app.windows.zip"
         >
-          🐧 Linux
-        </Button>
-        <Button
-          variant="contained"
-          color="secondary"
-          className={classes.button}
-          href="https://download.trinity-feeds.app/feeds-service/feedsd_armhf_raspbian.deb"
-        >
-          🍓 Raspberry Pi
+          🖥️ Windows
         </Button>
         <Button
           variant="contained"
@@ -101,10 +93,19 @@ export default function FeedsService() {
           variant="contained"
           color="secondary"
           className={classes.button}
-          href="https://download.trinity-feeds.app/feeds-service/Feeds.Service.app.windows.zip"
+          href="https://download.trinity-feeds.app/feeds-service/feedsd_armhf_raspbian.deb"
         >
-          🖥️ Windows
+          🍓 Raspberry Pi
         </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          className={classes.button}
+          href="https://download.trinity-feeds.app/feeds-service/feedsd_amd64_ubuntu_2004.deb"
+        >
+          🐧 Linux
+        </Button>
+
         <Button
           variant="contained"
           color="secondary"

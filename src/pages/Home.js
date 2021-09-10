@@ -72,7 +72,7 @@ const cardInfos = [
     title: `Resources`,
     username: `@Feeds-resources`,
     descrs: [
-      `If you have any problems😕, feel free to browse the manual🔧 from the link below or you can join our Telegram channel and ask us there!🔥`,
+      `If you have any problems😕, feel free to browse the resources🔧 from the link below or you can join our Telegram channel and ask us there!🔥`,
     ],
     content: <Manual />,
     like: `85`,
