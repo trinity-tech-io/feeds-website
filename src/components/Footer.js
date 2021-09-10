@@ -139,14 +139,14 @@ export const Footer = React.memo(function NeptuneAppFooter() {
                     href={"/disclaimer"}
                     target="_blank"
                   >
-                    Disclaimer(Feeds dApp)
+                    Disclaimer - Feeds dApp
                   </NavItem>
                   <NavItem
                     className={cx(classes.legalLink)}
                     href={"/disclaimer-nft"}
                     target="_blank"
                   >
-                    Disclaimer(Feeds NFT)
+                    Disclaimer - Feeds NFT
                   </NavItem>
                 </ColumnToRow>
               </NavMenu>

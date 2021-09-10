@@ -51,7 +51,7 @@ export default function Download() {
 
         <Grid container direction="column" justify="center" alignItems="center">
           <Typography variant="h5" color="primary" className={classes.title}>
-            Android APK
+            Direct Download (APK)
           </Typography>
         </Grid>
 

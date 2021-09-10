@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { Grid } from "@material-ui/core";
+import CardContent from "@material-ui/core/CardContent";
+import scanimg from "../assets/feeds-service-scan.jpg";
 
 const useStyles = makeStyles((theme) => ({
   media: {
@@ -15,43 +17,39 @@ const useStyles = makeStyles((theme) => ({
   title: {
     margin: theme.spacing(2),
   },
+  desktopimg: {
+    margin: theme.spacing(1),
+    width: "100%",
+    height: "auto",
+  },
+  scanimg: {
+    margin: theme.spacing(1),
+    width: "50%",
+    height: "auto",
+  },
 }));
 
-export default function Manual() {
+export default function ServiceIntro() {
   const classes = useStyles();
 
   return (
     <div>
       <Grid container direction="column" justify="center">
-        <Typography variant="h5" color="secondary" className={classes.title}>
-          Installation Guide/Manual
-        </Typography>
         <Button
-          variant="outlined"
+          variant="contained"
           color="secondary"
           className={classes.button}
-          href="/guide"
-          target="_blank"
+          href="#guideWM"
         >
-          📦 Feeds Service Installation Guide
+          🖥️ Windows / 🍏 Mac OS
         </Button>
         <Button
-          variant="outlined"
+          variant="contained"
           color="secondary"
           className={classes.button}
-          href="https://web.telegram.org/#/im?p=@feedscapsule"
-          target="_blank"
+          href="#guidePL"
         >
-          ✈️ Telegram Channel
-        </Button>
-        <Button
-          variant="outlined"
-          color="secondary"
-          className={classes.button}
-          href="https://feeds.featurebase.app/"
-          target="_blank"
-        >
-          💡 Submit Feedback
+          🍓 Raspberry Pi / 🐧 Linux
         </Button>
       </Grid>
     </div>

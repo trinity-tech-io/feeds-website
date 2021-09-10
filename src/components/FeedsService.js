@@ -61,6 +61,7 @@ export default function FeedsService() {
         <Grid container direction="column" justify="center" alignItems="center">
           <Typography variant="h5" color="secondary" className={classes.title}>
             Choose Your Platform
+            <span style={{ fontSize: "0.9rem" }}> v2.0.1</span>
           </Typography>
         </Grid>
         <Button
@@ -91,9 +92,9 @@ export default function FeedsService() {
           variant="contained"
           color="secondary"
           className={classes.button}
-          // href="#"
+          href="https://download.trinity-feeds.app/feeds-service/Feeds.Service.app.windows.zip"
         >
-          🖥️ Windows (Coming Soon)
+          🖥️ Windows
         </Button>
         <Button
           variant="contained"
@@ -104,6 +105,15 @@ export default function FeedsService() {
         >
           😺 Github
         </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          className={classes.button}
+          href="https://store.elabox.com/"
+          target="_blank"
+        >
+          📦 Elabox
+        </Button>
         <Grid container direction="column" justify="center" alignItems="center">
           <Typography variant="h5" color="secondary" className={classes.title}>
             For Docker
@@ -111,7 +121,7 @@ export default function FeedsService() {
         </Grid>
         <Grid container direction="column" justify="center" alignItems="center">
           <Typography color="secondary" className={classes.font}>
-            🏃Run the following command in the terminal and start the service
+            🏃 Run the following command in the terminal and start the service
           </Typography>
         </Grid>
         <Button
@@ -120,7 +130,7 @@ export default function FeedsService() {
           onClick={handleClick({ vertical: "center", horizontal: "center" })}
           className={classes.button}
         >
-          docker run -d --restart=always -p 10080:10080 trinitytech/feeds
+          docker run -d --restart=always -p 10018:10018 trinitytech/feeds
         </Button>
       </Grid>
       <Snackbar

@@ -47,7 +47,7 @@ const cardInfos = [
     username: `@Feeds-service`,
     descrs: [
       `Wait a minute!🙈🙉🙊 If you plan to browse channels in Feeds as a reader/consumer, you can skip this step. As for creators you will need to create a Publisher Account from Feeds Service in order to run a node for storing your data.
-      Download the installer💻, run it and open ➡️localhost:10080 in the local browser to receive your Publisher Account QR code.`,
+      Download the installer💻, run it and open ➡️localhost:10018 in the local browser to receive your Publisher Account QR code.`,
     ],
     content: <FeedsService />,
     like: `116`,
