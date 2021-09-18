@@ -81,14 +81,31 @@ export default function FeedsService() {
         >
           🖥️ Windows
         </Button>
-        <Button
-          variant="contained"
-          color="secondary"
-          className={classes.button}
-          href="https://download.trinity-feeds.app/feeds-service/Feeds.Service.app.macos.zip"
-        >
-          🍏 Mac OS
-        </Button>
+        <Grid container item direction="row" justify="center" alignItems="center">
+          <Grid item direction="row" xs={12} sm={6} md={6} lg={6}>
+            <Button
+                variant="contained"
+                color="secondary"
+                className={classes.button}
+                style={{width: "94%"}}
+                href="https://download.trinity-feeds.app/feeds-service/Feeds.Service.app.macos.zip"
+            >
+              🍏 Mac OS
+            </Button>
+          </Grid>
+
+          <Grid item direction="row" xs={12} sm={6} md={6} lg={6}>
+            <Button
+                variant="contained"
+                color="secondary"
+                className={classes.button}
+                style={{width: "93%"}}
+                href="https://download.trinity-feeds.app/feeds-service/Feeds.Service.app.macos.arm64.zip"
+            >
+              🍏 Mac OS(Silicon Chip)
+            </Button>
+          </Grid>
+        </Grid>
         <Button
           variant="contained"
           color="secondary"
