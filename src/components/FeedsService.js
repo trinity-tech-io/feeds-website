@@ -19,6 +19,12 @@ const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
   },
+  buttonMac: {
+    width: "94%",
+    [theme.breakpoints.down('xs')]: {
+      width: "96%",
+    }
+  },
   title: {
     margin: theme.spacing(2),
   },
@@ -86,8 +92,7 @@ export default function FeedsService() {
             <Button
                 variant="contained"
                 color="secondary"
-                className={classes.button}
-                style={{width: "94%"}}
+                className={[classes.button, classes.buttonMac]}
                 href="https://download.trinity-feeds.app/feeds-service/Feeds.Service.app.macos.zip"
             >
               🍏 Mac OS
@@ -98,8 +103,7 @@ export default function FeedsService() {
             <Button
                 variant="contained"
                 color="secondary"
-                className={classes.button}
-                style={{width: "93%"}}
+                className={[classes.button, classes.buttonMac]}
                 href="https://download.trinity-feeds.app/feeds-service/Feeds.Service.app.macos.arm64.zip"
             >
               🍏 Mac OS(Silicon Chip)
