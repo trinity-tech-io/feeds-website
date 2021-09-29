@@ -68,7 +68,7 @@ export default function Download() {
         <Grid container direction="column" justify="center" alignItems="center">
           <CardContent>
             <Typography variant="h5" color="black" className={classes.font}>
-              If you're already using Elastos Eseentials, you can sign in🔑 with
+              If you're already using Elastos Essentials, you can sign in🔑 with
               your existing DID. A temporary DID will be issued by Feeds during
               onboarding for users without one🛑. You can either export🚢 that
               DID and publish it to the blockchain later or you can create one
