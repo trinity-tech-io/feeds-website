@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
       width: "96%",
     }
   },
+  buttonDocker: {
+    textTransform: "lowercase"
+  },
   title: {
     margin: theme.spacing(2),
   },
@@ -159,7 +162,7 @@ export default function FeedsService() {
           variant="outlined"
           color="secondary"
           onClick={handleClick({ vertical: "center", horizontal: "center" })}
-          className={classes.button}
+          className={[classes.button, classes.buttonDocker]}
         >
           docker run -d --restart=always -p 10018:10018 trinitytech/feeds
         </Button>
