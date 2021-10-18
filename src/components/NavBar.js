@@ -51,7 +51,7 @@ const navLinks = [
   { title: `Node`, path: `#feeds-service` },
   { title: `App`, path: `#app` },
   { title: `Resources`, path: `#resources` },
-  { title: `Verified Creator`, path: `#whitelist` },
+  { title: `Creators`, path: `#whitelist` },
 ];
 
 function Navbar({ switchtheme, showNav }) {

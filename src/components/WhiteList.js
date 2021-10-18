@@ -6,7 +6,6 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from "@material-ui/core/Divider";
-import {ListItemSecondaryAction} from "@material-ui/core";
 import IconButton from "@material-ui/core/IconButton";
 import TwitterIcon from '@material-ui/icons/Twitter';
 import Link from "@material-ui/core/Link";
@@ -20,22 +19,17 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     name: {
-        margin: "5px 0",
-        color: "#a067ff"
+        margin: "5px 10px 5px 0",
+        color: "#a067ff",
+        display: "inline-block",
+        fontWeight: "bold"
     },
     description: {
         fontSize: "12px",
         margin: "0 0 5px",
-        maxWidth: "380px"
     },
     address: {
         fontSize: "13px",
-    },
-    onHover: {
-        "&:hover": {
-            backgroundColor: "#368BFF",
-            color: "#FFF",
-        },
     },
 }));
 
@@ -43,7 +37,12 @@ function Primary(props) {
     const classes = useStyles();
     return (
         <>
-            <h4 className={classes.name}>{props.name}</h4>
+            <span className={classes.name}>{props.name}</span>
+            <Link href={props.twitter} target="_blank">
+                <IconButton  aria-label="Twitter" color="secondary">
+                    <TwitterIcon fontSize="small" />
+                </IconButton>
+            </Link>
             <p className={classes.description}>{props.description}</p>
         </>
     )
@@ -68,28 +67,19 @@ export default function WhiteList() {
 
     return (
         <div className={classes.demo}>
-
             <List dense={false}>
-                <Divider variant="fullWidth" component="li"/>
                 {whitelist.map((item, index) => (
                     <div>
-                        <ListItem key={index}>
+                        <ListItem key={index} style={{margin: "0 5px"}}>
                             <ListItemAvatar>
                                 <Avatar src={`https://ipfs.trinity-feeds.app/ipfs/${item.avatar}`} />
                             </ListItemAvatar>
                             <ListItemText
-                                primary={<Primary name={item.name} description={item.description} />}
+                                primary={<Primary name={item.name} description={item.description}
+                                                  twitter={item.social[1].twitter} website={item.social[0].website}/>}
                                 secondary={<Secondary address={item.address} />}
                             />
-                            <ListItemSecondaryAction>
-                                <Link href={item.social[1].twitter} target="_blank">
-                                    <IconButton  aria-label="Twitter" color="primary" className={classes.onHover}>
-                                        <TwitterIcon />
-                                    </IconButton>
-                                </Link>
-                            </ListItemSecondaryAction>
                         </ListItem>
-                        <Divider variant="fullWidth" component="li"/>
                     </div>
                 ))}
             </List>

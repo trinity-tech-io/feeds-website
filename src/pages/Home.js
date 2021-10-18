@@ -83,11 +83,10 @@ const cardInfos = [
   {
     id: "whitelist",
     avatarimg: <VerifiedUserIcon />,
-    title: `Verified Creator`,
+    title: `Verified Creators`,
     username: `@Verification`,
     descrs: [
       `Here's a list of creators verified by Feeds✅`,
-
     ],
     content: <WhiteList />,
     like: `24`,
