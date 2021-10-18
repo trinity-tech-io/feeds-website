@@ -12,6 +12,8 @@ import FlashOnIcon from "@material-ui/icons/FlashOn";
 import ComputerIcon from "@material-ui/icons/Computer";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
+import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
+import WhiteList from "../components/WhiteList";
 
 const cardInfos = [
   {
@@ -77,6 +79,19 @@ const cardInfos = [
     content: <Manual />,
     like: `85`,
     comment: `22`,
+  },
+  {
+    id: "whitelist",
+    avatarimg: <VerifiedUserIcon />,
+    title: `Verified Creator`,
+    username: `@Verification`,
+    descrs: [
+      `Here's a list of creators verified by Feeds✅`,
+
+    ],
+    content: <WhiteList />,
+    like: `24`,
+    comment: `8`,
   },
 ];
 
