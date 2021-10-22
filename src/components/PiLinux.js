@@ -138,7 +138,7 @@ export default function PiLinux() {
 
         <Grid container direction="column" justify="center" alignItems="center">
           <Typography variant="h5" color="secondary" className={classes.title}>
-            Step 5 ☑️
+            Step 6 ☑️
           </Typography>
           <Typography variant="h5" color="black" className={classes.font}>
             📲 Scan QR code from the Feeds app
