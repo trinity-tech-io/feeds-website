@@ -79,7 +79,7 @@ export default function FeedsService() {
           </Button>
           <Typography variant="h5" color="secondary" className={classes.title}>
             Choose Your Platform
-            <span style={{ fontSize: "0.9rem" }}> v2.0.1</span>
+            <span style={{ fontSize: "0.9rem" }}> v2.0.2</span>
           </Typography>
         </Grid>
         <Button
@@ -117,7 +117,7 @@ export default function FeedsService() {
           variant="contained"
           color="secondary"
           className={classes.button}
-          href="https://download.trinity-feeds.app/feeds-service/feedsd_armhf_raspbian.deb"
+          href="https://download.trinity-feeds.app/feeds-service/feedsd_arm64_raspbian.deb"
         >
           🍓 Raspberry Pi
         </Button>
