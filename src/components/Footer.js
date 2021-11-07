@@ -102,7 +102,7 @@ export const Footer = React.memo(function NeptuneAppFooter() {
                 </Link>
 
                 <Link
-                  href={"https://web.telegram.org/#/im?p=@feedscapsule"}
+                  href={"https://t.me/feedscapsule"}
                   target="_blank"
                 >
                   <IconButton
