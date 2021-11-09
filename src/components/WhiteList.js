@@ -60,7 +60,7 @@ export default function WhiteList() {
     const [whitelist, setWhitelist] = React.useState([]);
 
     React.useEffect(() => {
-        fetch('https://test.trinity-feeds.app/pasar/api/v1/whitelist')
+        fetch('https://assist.trinity-feeds.app/pasar/api/v1/whitelist')
             .then(response => response.json())
             .then(data => setWhitelist(data.data));
     }, [])
