@@ -42,7 +42,7 @@ const cardInfos = [
     title: `Feeds Service Node`,
     username: `@Feeds-service`,
     descrs: [`Wait a minute!🙈🙉🙊 Before you can start using Feeds on your mobile phone📱, you need Feeds Service in order to run a node for storing your data.
-      Download the installer💻, run it and open ➡️localhost:10080 in the local browser to receive your Publisher Account QR code.`],
+      Download the installer💻, run it and open ➡️localhost:10018 in the local browser to receive your Publisher Account QR code.`],
     content: <FeedsService />,
     like: `116`,
     comment: `6`,

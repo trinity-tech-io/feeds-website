@@ -31,7 +31,7 @@ export default function FeedsService() {
   const classes = useStyles();
 
   const [isCopied, setCopied] = useClipboard(
-    "docker run -d --restart=always -p 10080:10080 trinitytech/feeds"
+    "docker run -d --restart=always -p 10018:10018 trinitytech/feeds"
   );
 
   //snackbar
@@ -121,7 +121,7 @@ export default function FeedsService() {
           onClick={handleClick({ vertical: "center", horizontal: "center" })}
           className={classes.button}
         >
-          docker run -d --restart=always -p 10080:10080 trinitytech/feeds
+          docker run -d --restart=always -p 10018:10018 trinitytech/feeds
         </Button>
       </Grid>
       <Snackbar
