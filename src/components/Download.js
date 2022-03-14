@@ -59,7 +59,7 @@ export default function Download() {
           variant="contained"
           color="primary"
           className={classes.button}
-          href="http://download.elastos.org/app/trinity-feeds/feeds.apk"
+          href="https://download.elastos.io/app/trinity-feeds/feeds-v2.1.2.apk"
           target="_blank"
         >
           🤖 Android
