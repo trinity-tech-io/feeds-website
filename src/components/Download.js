@@ -33,7 +33,7 @@ export default function Download() {
           variant="contained"
           color="primary"
           className={classes.button}
-          href="https://play.google.com/store/apps/details?id=io.trinitytech.dapp.feeds"
+          href="https://play.google.com/store/apps/details?id=io.trinitytech.dapp.feedsnetwork&hl=en_US&gl=US"
           target="_blank"
         >
           🤖 Android
@@ -42,7 +42,7 @@ export default function Download() {
           variant="contained"
           color="primary"
           className={classes.button}
-          href="https://apps.apple.com/us/app/trinity-feeds/id1546436333"
+          href="https://apps.apple.com/app/feeds-network/id1626429590?platform=iphone"
           target="_blank"
         >
           🍏 ios

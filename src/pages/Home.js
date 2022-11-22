@@ -29,14 +29,14 @@ const cardInfos = [
     avatarimg: <FlashOnIcon />,
     title: `Features`,
     username: `@Feeds-features`,
-    descrs: [`So, why Feeds?🤔 Well, with all the ongoing privacy and data breach, there's gotta be a way to safeguard our data right?  
+    descrs: [`So, why Feeds?🤔 Well, with all the ongoing privacy and data breach, there's gotta be a way to safeguard our data right?
      Here's where Feeds come into place. You're the sole owner of your data🔒 and only 👉YOU👈can control them however you want.
      Feeds also cannot be censored❌🚫 by any authority.`],
     content: <Features />,
     like: `599`,
     comment: `15`,
   },
-  {
+  /*{
     id: "feeds-service",
     avatarimg: <ComputerIcon />,
     title: `Feeds Service Node`,
@@ -46,13 +46,13 @@ const cardInfos = [
     content: <FeedsService />,
     like: `116`,
     comment: `6`,
-  },
+  },*/
   {
     id: "app",
     avatarimg: <PhoneAndroidIcon />,
     title: `Mobile App`,
     username: `@Feeds-capsule`,
-    descrs: [`Phew💦 Okay, the next step is the easiest part😎! Go ahead and download📲 the Feeds mobile app, sign in with your DID🆔 and 
+    descrs: [`Phew💦 Okay, the next step is the easiest part😎! Go ahead and download📲 the Feeds mobile app, sign in with your DID🆔 and
     bind the Publisher Account QR code from Feeds Service.🗨️ That's it! You're good to go. Just follow the instructions from the app to get started!🚀🌕`],
     content: <Download />,
     like: `555`,
